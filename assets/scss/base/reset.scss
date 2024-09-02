@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  font-family:  "EliceNeolli", "Nanum Gothic", "dotum", sans-serif;
+  font-size: var(--font-base);
+  font-weight: 400;
+  color: #333;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:after, &:before {
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus, &:focus-visible, &:active, &:hover {
+    outline: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  caption {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* 컬러 */
+:root {
+  --font-xl: 20px;
+  --font-lg: 18px;
+  --font-base: 16px;
+  --font-sm: 14px;
+}
+
+@include responsive(tablet) {
+  :root {
+    --font-xl: 16px;
+    --font-lg: 13px;
+    --font-base: 13px;
+    --font-sm: 12px;
+  }
+}

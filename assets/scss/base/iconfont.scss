@@ -1,0 +1,99 @@
+[class^="fi-"], [class*=" fi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  display: inline-block;
+  font-family: 'wbIconFont' !important;
+  speak: never;
+  color: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.fi-document:before {
+  content: "\e91f";
+}
+.fi-upload:before {
+  content: "\e920";
+}
+.fi-download:before {
+  content: "\e91e";
+}
+.fi-employ-pencil:before {
+  content: "\e91a";
+}
+.fi-employ-user:before {
+  content: "\e91c";
+}
+.fi-circle-i:before {
+  content: "\e919";
+}
+.fi-x-mark:before {
+  content: "\e910";
+}
+.fi-search:before {
+  content: "\e917";
+}
+.fi-reset:before {
+  content: "\e918";
+}
+.fi-chevron-down:before {
+  content: "\e915";
+}
+.fi-link2:before {
+  content: "\e913";
+}
+.fi-chevron-right:before {
+  content: "\e911";
+}
+.fi-box-arrow:before {
+  content: "\e912";
+}
+.fi-trash-can:before {
+  content: "\e90e";
+}
+.fi-pencil-line:before {
+  content: "\e90f";
+}
+.fi-out:before {
+  content: "\e902";
+}
+.fi-circle-x:before {
+  content: "\e903";
+}
+.fi-kebab:before {
+  content: "\e90d";
+}
+.fi-kebab-double:before {
+  content: "\e904";
+}
+.fi-arrow-up:before {
+  content: "\e905";
+}
+.fi-box-image:before {
+  content: "\e906";
+}
+.fi-box-plus:before {
+  content: "\e907";
+}
+.fi-plus:before {
+  content: "\e908";
+}
+.fi-link:before {
+  content: "\e909";
+}
+.fi-sns-kakao:before {
+  content: "\e90a";
+}
+.fi-sns-x:before {
+  content: "\e90b";
+}
+.fi-sns-facebook:before {
+  content: "\e90c";
+}

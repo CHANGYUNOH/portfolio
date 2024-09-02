@@ -1,0 +1,108 @@
+//IR
+.blind,
+.read-only {
+  //눈에 보이는 부분을 제거1
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  //레이아웃에 영향을 끼치지 않도록
+  position: absolute;
+
+  //스크린 리더가 읽을 수 있도록
+  width: 1px;
+  height: 1px;
+
+  //눈에 보이는 부분을 제거
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+.is-pointer {
+  cursor: pointer;
+}
+
+//폼요소
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+input[type=tel] {
+  &:disabled {
+
+  }
+
+  &.is-full {
+    width: 100%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+  }
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--colorMode10);
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--colorMode10);
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  text-size-adjust : 1em;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+select {
+  position: relative;
+  min-width: 140px;
+  height: 42px;
+  padding: 0 20px;
+  outline: none;
+  border: 1px solid #eaeaea;
+  font-family: inherit;
+  font-size: inherit;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+
+  option {
+    &[disabled] {
+      display: none;
+    }
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  &::placeholder {
+  }
+
+  &::-webkit-scrollbar {
+  }
+
+  &::-webkit-scrollbar-thumb {
+  }
+
+  &::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-track-piece {
+  }
+}
+

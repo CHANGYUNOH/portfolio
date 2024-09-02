@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+// 사이즈 지정
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// 가운데지정
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin transition {
+  transition: all ease .3s;
+}
+
+// 말줄임
+@mixin ellipsis {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 말줄임여러줄
+@mixin ellipsis-multi($line-clamp: 2) {
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  display: -ms-box;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clamp;
+  text-overflow: ellipsis;
+}
+
+// 아래에서 위로 올라오는 애니메이션
+@mixin moveUpStart {
+  opacity: 0;
+  transform: translateY(40%);
+}
+
+@mixin moveUpEnd {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@mixin moveTransition($transform: .5s, $opacity: .8s) {
+  transition: transform $transform cubic-bezier(0.25, 0.1, 0.25, 1.25), opacity $opacity ease;
+}
+
+// 반응형 사이즈
+@mixin responsive($media) {
+  $pc: "(min-width: 1025px)";
+  $tablet: "(max-width: 1024px)";
+  $mob: "(max-width: 768px)";
+  $mob-small: "(max-width: 375px)";
+
+  @if $media == pc {
+    @media only screen and #{$pc} {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and #{$tablet} {
+      @content;
+    }
+  } @else if $media == mob {
+    @media only screen and #{$mob} {
+      @content;
+    }
+  } @else if $media == mob-small {
+    @media only screen and #{$mob-small} {
+      @content;
+    }
+  }
+}
+
+/* 이미지 URL */
+$imgUrl: "@/assets/images";
+$imgUrlMob: "@/assets/images/mob";

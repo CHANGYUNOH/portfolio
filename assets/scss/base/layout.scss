@@ -1,0 +1,17 @@
+/* 전체그리드와 메뉴 */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex: 1;
+    padding: 20px 0;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}

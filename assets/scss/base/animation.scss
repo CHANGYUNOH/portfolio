@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@keyframes spin {
+  0% { transform: rotate(0) }
+  100% { transform: rotate(360deg) }
+}
+
+/*** <transition>용 animation ***/
+//슬라이드 상하
+.slide-enter-active {
+  transition: max-height 0.3s ease-in;
+}
+
+.slide-leave-active {
+  transition: max-height 0.1s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  overflow: hidden;
+  max-height: 0;
+}
+
+//페이드
+.fade-enter-from, .fade-leave-to {
+  opacity: 0.1;
+}
+
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  transition: opacity .3s ease-out;
+}
+
+.fade-leave-active {
+  transition: opacity .1s ease-out;
+}
+
+//우측슬라이드(mobile 메뉴)
+.slide-left-enter-from, .slide-left-leave-to {
+  transform: translateX(100%);
+}
+
+.slide-left-enter-to, .slide-left-leave-from {
+  transform: translateX(0);
+}
+
+.slide-left-enter-active {
+  transition: transform 0.3s ease-out;
+}
