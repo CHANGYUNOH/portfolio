@@ -1,5 +1,5 @@
 <template>
-  <div class="container">내용영역</div>
+  <div class="container">내용영역 테스트</div>
 </template>
 
 <script setup>
