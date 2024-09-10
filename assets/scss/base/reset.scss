@@ -76,10 +76,39 @@ table {
 
 /* 컬러 */
 :root {
+  --font-xxl: 22px;
   --font-xl: 20px;
   --font-lg: 18px;
   --font-base: 16px;
   --font-sm: 14px;
+
+  --colorPoint1: #fd8788;
+
+  --colorWheel1: #ea6bd6;
+  --colorWheel2: #7685d7;
+  --colorWheel3: #a072eb;
+  --colorWheel4: #47a1e6;
+  --colorWheel5: #1eb7b9;
+  --colorWheel6: #3da68c;
+  --colorWheel7: #72be48;
+  --colorWheel8: #ffa800;
+  --colorWheel9: #ff8919;
+  --colorWheel10: #fc696a;
+
+  --colorBg1: #f8f8f8;
+  --colorBg2: #d7d7d7;
+
+  --colorText1: #333;
+  --colorText2: #666;
+  --colorText3: #777;
+  --colorText4: #888;
+  --colorText5: #999;
+  --colorText6: #ccc;
+
+  --colorBorder1: #c2c2c2;
+  --colorBorder2: #d7d7d7;
+  --colorBorder3: #eaeaea;
+
 }
 
 @include responsive(tablet) {

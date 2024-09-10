@@ -1,6 +1,416 @@
 <template>
-  <div class="container">내용영역 테스트</div>
+  <div class="container">
+
+    <!-- 배너 -->
+    <div class="banner">
+      <div class="banner-image">
+        <img src="/assets/images/default/profile.jpg" alt="프로필 이미지">
+      </div>
+      <div class="banner-text">
+        <div class="banner-text-title">
+          <p>안녕하세요!</p>
+          <p><span class="line">솔루션 경험</span>을 바탕으로</p>
+          <p>회사의 <span class="line">핵심인재</span>가 되겠습니다.</p>
+        </div>
+        <div class="banner-text-sub">
+          <p>3년 차 웹 퍼블리셔로,</p>
+          <p>교육 솔루션 개발 회사에서 웹서비스를 개발하였습니다.</p>
+          <p>솔루션사업본부의 팀원으로 합류되어서</p>
+          <p>매출액 22%증가, 자산 19%증가에</p>
+          <p>필요한 역량을 이바지 했던 경험이 있습니다.</p>
+          <br>
+          <p>맡은 바 책임감을 가지고 끝까지 문제를 해결하는것을 추구합니다.</p>
+        </div>
+      </div>
+    </div>
+    <!-- // 배너 -->
+
+    <!-- 기술 -->
+    <div class="row">
+      <div class="title">Skills</div>
+      <div class="cont">
+        <div class="slider">
+          <swiper :slidesPerView="6"
+                  :spaceBetween="20"
+                  :loop="true">
+            <swiper-slide class="item" v-for="(item, i) in skillList">
+              <p>{{ item.name }}</p>
+              <img :src="`${item.url}`" :alt="item.name">
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </div>
+    <!-- // 기술 -->
+
+    <div class="row">
+      <div class="title">Tools</div>
+      <div class="cont">
+        <div class="slider">
+          <swiper :slidesPerView="6"
+                  :spaceBetween="20"
+                  :loop="true">
+            <swiper-slide class="item" v-for="(item, i) in toolList">
+              <p>{{ item.name }}</p>
+              <img :src="`${item.url}`" :alt="item.name">
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </div>
+
+    <!-- 프로젝트 -->
+    <div class="row">
+      <div class="title">Project</div>
+      <div class="cont">
+        <div class="slider project">
+          <swiper :slidesPerView="1.8"
+                  :spaceBetween="20"
+                  :loop="true"
+                  :centeredSlides="true"
+                  :autoplay="{
+                  delay: 4000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: false,
+                  }"
+                  :modules="[Autoplay]">
+            <swiper-slide class="item"
+                          :class="{
+                          'bg-sky' : item.logo === projectHncareer,
+                          'bg-green' : item.logo === projectHanabank || projectMetlife,
+                          'bg-mint' : item.logo === projectKnda,
+                          'bg-blue' : item.logo === projectAirforce,
+                          'bg-gray' : item.logo === projectMobis ,
+                          'bg-purple' : item.logo === projectGamification,
+                          'bg-black' : item.logo === projectKnda,
+                          'bg-white' : item.logo === projectHanati }"
+                          :style="{backgroundImage: `url(${item.title})`}"
+                          v-for="(item, i) in projectList">
+              <nuxt-link :to="`/project/${item.index}`" class="item-link">
+                <span v-if="item.title !== projectSaasda && item.title !== projectOpenprompt && item.title !== projectActesg">
+                  <img :src="`${item.logo}`" :alt="item.logo">
+                </span>
+              </nuxt-link>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </div>
+    <!-- // 프로젝트 -->
+
+
+    <!-- 연락처 -->
+    <div class="row">
+      <div class="title">Contact</div>
+      <div class="cont">
+        <ul class="contact">
+          <li class="contact-list">Email: no940901@gmail.com</li>
+          <li class="contact-list">Phone: 010-6651-1375</li>
+          <li class="contact-list">Blog: <nuxt-link to="https://ncg1375.tistory.com">https://ncg1375.tistory.com</nuxt-link></li>
+          <li class="contact-list">GitHub: <nuxt-link to="https://github.com/NOHCHANGYU">https://github.com/NOHCHANGYU</nuxt-link></li>
+        </ul>
+      </div>
+    </div>
+    <!-- // 연락처 -->
+
+  </div>
 </template>
 
 <script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+
+import iconHtml from '~/assets/images/icon/icon_html.png';
+import iconCss from '~/assets/images/icon/icon_css.png';
+import iconScss from '~/assets/images/icon/icon_scss.png';
+import iconJs from '~/assets/images/icon/icon_js.png';
+import iconVue from '~/assets/images/icon/icon_vue.png';
+import iconNuxt from '~/assets/images/icon/icon_nuxt.png';
+import iconPhotoshop from '~/assets/images/icon/icon_photoshop.png';
+import iconGitlab from '~/assets/images/icon/icon_gitlab.png';
+import iconTrello from '~/assets/images/icon/icon_trello.png';
+import iconRedmine from '~/assets/images/icon/icon_redmine.png';
+import iconSvn from '~/assets/images/icon/icon_svn.png';
+import iconFigma from '~/assets/images/icon/icon_figma.png';
+import iconSpreadsheet from '~/assets/images/icon/icon_spread_sheet.png';
+import iconNotion from '~/assets/images/icon/icon_notion.png';
+
+import projectSaasda from '~/assets/images/default/project_saasda.png'
+import projectActesg from '~/assets/images/default/project_actesg.png'
+import projectOpenprompt from '~/assets/images/default/project_openprompt.png'
+import projectGamification from '~/assets/images/default/project_gamification.png'
+import projectAirforce from '~/assets/images/default/project_airforce.png'
+import projectKnda from '~/assets/images/default/project_knda.png'
+import projectMobis from '~/assets/images/default/project_mobis.png'
+import projectMetlife from '~/assets/images/default/project_metlife.png'
+import projectHncareer from '~/assets/images/default/project_hanam.png'
+import projectHanabank from '~/assets/images/default/project_hanabank.png'
+import projectHanati from '~/assets/images/default/project_hanati.png'
+
+// 스킬 리스트
+const skillList = ref([
+  {
+    name: 'HTML',
+    url: iconHtml
+  },
+  {
+    name: 'CSS',
+    url: iconCss
+  },
+  {
+    name: 'SCSS',
+    url: iconScss
+  },
+  {
+    name: 'JavaScript',
+    url: iconJs
+  },
+  {
+    name: 'Vue',
+    url: iconVue
+  },
+  {
+    name: 'Nuxt',
+    url: iconNuxt
+  },
+  {
+    name: 'PhotoShop',
+    url: iconPhotoshop
+  },
+]);
+
+// 툴 리스트
+const toolList = ref([
+  {
+    name: 'GitLab',
+    url: iconGitlab
+  },
+  {
+    name: 'Trello',
+    url: iconTrello
+  },
+  {
+    name: 'Redmine',
+    url: iconRedmine
+  },
+  {
+    name: 'Svn',
+    url: iconSvn
+  },
+  {
+    name: 'Figma',
+    url: iconFigma
+  },
+  {
+    name: 'Spread Sheet',
+    url: iconSpreadsheet
+  },
+  {
+    name: 'Notion',
+    url: iconNotion
+  }
+]);
+
+// 프로젝트 리스트
+const projectList = ref([
+  {
+    name: '타임교육 C&P 교육서비스의 게이미피케이션 활용에 관한 사전연구 수행사업',
+    logo: projectGamification,
+    index: 0
+  },
+  {
+    name: '서비스형 소프트웨어(SaaS) 개발 및 육성 사업',
+    title: projectSaasda,
+    index: 1
+  },
+  {
+    name: '하남교육재단 진로진학통합플랫폼 꿈노트 구축사업',
+    logo: projectHncareer,
+    index: 2
+  },
+  {
+    name: '하나은행 디지털캠퍼스 평가시스템 구축사업',
+    logo: projectHanabank,
+    index: 3
+  },
+  {
+    name: '공군교육사령부 공군 이러닝 무선기반체계 고도화 방안 연구 수행사업',
+    logo: projectAirforce,
+    index: 4
+  },
+  {
+    name: '현대모비스 2024년 시스템 운영사업',
+    logo: projectMobis,
+    index: 5
+  },
+  {
+    name: 'OpenPrompt 서비스 사업',
+    title: projectOpenprompt,
+    index: 6
+  },
+  {
+    name: 'ACT! ESG 서비스 사업',
+    title: projectActesg,
+    index: 7
+  },
+  {
+    name: '메트라이프 통합교육플랫폼 TIP 시스템 구축사업',
+    logo: projectMetlife,
+    index: 8
+  },
+  {
+    name: '하나은행 디지털캠퍼스 고도화사업',
+    logo: projectHanabank,
+    index: 9
+  },
+  {
+    name: '국립외교원 외교배움e 시스템 구축사업',
+    logo: projectKnda,
+    index: 10
+  },
+  {
+    name: '하나금융티아이 DT UNIV 시스템 구축사업',
+    logo: projectHanati,
+    index: 11
+  }
+])
+
 </script>
+
+<style lang="scss" scoped>
+.container {
+  .banner {
+    display: flex;
+    gap: 100px;
+    padding-top: 120px;
+
+    &-image {
+      border-radius: 50px;
+      overflow: hidden;
+
+      img {
+        width: 460px;
+      }
+    }
+
+    &-text {
+      flex: 1;
+      line-height: 1.5;
+      padding: 60px 0;
+
+      &-title {
+        font-size: 40px;
+      }
+
+      .line {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffff00;
+        -webkit-text-fill-color: #222;
+      }
+
+      .en {
+        font-size: var(--font-xl);
+      }
+
+      &-sub {
+        margin-top: 30px;
+        line-height: 2;
+        font-size: var(--font-xl);
+      }
+    }
+  }
+
+  .row {
+    margin-top: 100px;
+
+    .title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .cont {
+      .slider {
+        &.project {
+          .item {
+            background-color: #333;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            height: 428px;
+            border: 0;
+
+            &.bg-sky {
+              background-color : #d3f0f9;
+            }
+
+            &.bg-green {
+              background-color: #eaf9fa;
+            }
+
+            &.bg-mint {
+              background-color: #333;
+            }
+
+            &.bg-blue {
+              background-color: #e8f0fe;
+            }
+
+            &.bg-gray {
+              background-color: #f7f7f7;
+            }
+
+            &.bg-purple {
+              /*background-color: #f2effb;*/
+              background-color: #eef5fc;
+            }
+
+            &.bg-black {
+              background-color: #333;
+            }
+
+            &.bg-white {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 34px 0;
+        background: #333;
+        border: 3px solid #555;
+        border-radius: 30px;
+        font-size: var(--font-xxl);
+
+        &.svn {
+          img {
+            border-radius: 15px;
+          }
+        }
+        
+        img {
+          max-height: 50px;
+        }
+
+        &-link {
+          @include size(100%, 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .contact {
+        &-list {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+</style>
