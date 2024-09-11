@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">ⓒ 2024 NOHCHANGYU. All rights reserved.</div>
+    <div class="container">ⓒ 2024 CHANGYUNOH. All rights reserved.</div>
   </footer>
 </template>
 

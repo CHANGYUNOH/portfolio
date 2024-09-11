@@ -17,16 +17,26 @@ header {
 }
 
 .menu {
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 
   &-list {
-    float: left;
-    margin-right: 40px;
+    display: inline-flex;
     cursor: pointer;
+    position: relative;
 
     &:hover {
       &:after {
         transform: scaleX(1);
+      }
+    }
+
+    &.icon {
+      @include size(26px, 26px);
+
+      &:after {
+        display: none;
       }
     }
 
@@ -39,10 +49,16 @@ header {
       transform: scaleX(0);
       margin-top: 4px;
       @include transition;
+      position: absolute;
+      bottom: -8px;
     }
 
-    &:last-child {
-      margin: 0;
+    img {
+      height: 26px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

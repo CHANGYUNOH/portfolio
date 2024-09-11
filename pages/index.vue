@@ -13,7 +13,7 @@
           <p>회사의 <span class="line">핵심인재</span>가 되겠습니다.</p>
         </div>
         <div class="banner-text-sub">
-          <p>3년 차 웹 퍼블리셔로,</p>
+          <p>3년 차 웹 퍼블리셔, 노찬규입니다.</p>
           <p>교육 솔루션 개발 회사에서 웹서비스를 개발하였습니다.</p>
           <p>솔루션사업본부의 팀원으로 합류되어서</p>
           <p>매출액 22%증가, 자산 19%증가에</p>
@@ -33,7 +33,7 @@
           <swiper :slidesPerView="6"
                   :spaceBetween="20"
                   :loop="true">
-            <swiper-slide class="item" v-for="(item, i) in skillList">
+            <swiper-slide class="item" v-for="item in skillList">
               <p>{{ item.name }}</p>
               <img :src="`${item.url}`" :alt="item.name">
             </swiper-slide>
@@ -85,7 +85,7 @@
                           'bg-black' : item.logo === projectKnda,
                           'bg-white' : item.logo === projectHanati }"
                           :style="{backgroundImage: `url(${item.title})`}"
-                          v-for="(item, i) in projectList">
+                          v-for="item  in projectList">
               <nuxt-link :to="`/project/${item.index}`" class="item-link">
                 <span v-if="item.title !== projectSaasda && item.title !== projectOpenprompt && item.title !== projectActesg">
                   <img :src="`${item.logo}`" :alt="item.logo">
@@ -104,10 +104,13 @@
       <div class="title">Contact</div>
       <div class="cont">
         <ul class="contact">
+          <li class="contact-list">name: NOHCHANGYU</li>
           <li class="contact-list">Email: no940901@gmail.com</li>
           <li class="contact-list">Phone: 010-6651-1375</li>
-          <li class="contact-list">Blog: <nuxt-link to="https://ncg1375.tistory.com">https://ncg1375.tistory.com</nuxt-link></li>
-          <li class="contact-list">GitHub: <nuxt-link to="https://github.com/NOHCHANGYU">https://github.com/NOHCHANGYU</nuxt-link></li>
+        </ul>
+        <ul class="contact link">
+          <li class="contact-list"><nuxt-link to="https://ncg1375.tistory.com" class="contact-list-link"><img src="/assets/images/icon/icon_tstory.png" alt="티스토리"></nuxt-link></li>
+          <li class="contact-list"><nuxt-link to="https://github.com/CHANGYUNOH" class="contact-list-link"><img src="/assets/images/icon/icon_github.png" alt="깃헙"></nuxt-link></li>
         </ul>
       </div>
     </div>
@@ -127,6 +130,9 @@ import iconScss from '~/assets/images/icon/icon_scss.png';
 import iconJs from '~/assets/images/icon/icon_js.png';
 import iconVue from '~/assets/images/icon/icon_vue.png';
 import iconNuxt from '~/assets/images/icon/icon_nuxt.png';
+import iconJquery from '~/assets/images/icon/icon_jquery.png';
+import iconGulp from '~/assets/images/icon/icon_gulp.png';
+import iconVite from '~/assets/images/icon/icon_vite.png';
 import iconPhotoshop from '~/assets/images/icon/icon_photoshop.png';
 import iconGitlab from '~/assets/images/icon/icon_gitlab.png';
 import iconTrello from '~/assets/images/icon/icon_trello.png';
@@ -144,11 +150,11 @@ import projectAirforce from '~/assets/images/default/project_airforce.png'
 import projectKnda from '~/assets/images/default/project_knda.png'
 import projectMobis from '~/assets/images/default/project_mobis.png'
 import projectMetlife from '~/assets/images/default/project_metlife.png'
-import projectHncareer from '~/assets/images/default/project_hanam.png'
+import projectHncareer from '~/assets/images/default/project_hncareer.png'
 import projectHanabank from '~/assets/images/default/project_hanabank.png'
 import projectHanati from '~/assets/images/default/project_hanati.png'
 
-// 스킬 리스트
+// 2024.09.10[cgnoh]: 스킬 리스트
 const skillList = ref([
   {
     name: 'HTML',
@@ -175,13 +181,25 @@ const skillList = ref([
     url: iconNuxt
   },
   {
+    name: 'Jquery',
+    url: iconJquery
+  },
+  {
+    name: 'Gulp',
+    url: iconGulp
+  },
+  {
+    name: 'Vite',
+    url: iconVite
+  }
+]);
+
+// 2024.09.10[cgnoh]: 툴 리스트
+const toolList = ref([
+  {
     name: 'PhotoShop',
     url: iconPhotoshop
   },
-]);
-
-// 툴 리스트
-const toolList = ref([
   {
     name: 'GitLab',
     url: iconGitlab
@@ -212,7 +230,7 @@ const toolList = ref([
   }
 ]);
 
-// 프로젝트 리스트
+// 2024.09.10[cgnoh]: 프로젝트 리스트
 const projectList = ref([
   {
     name: '타임교육 C&P 교육서비스의 게이미피케이션 활용에 관한 사전연구 수행사업',
@@ -336,8 +354,10 @@ const projectList = ref([
             background-color: #333;
             background-repeat: no-repeat;
             background-size: auto 100%;
+            background-position: center;
             height: 428px;
             border: 0;
+            padding: 0;
 
             &.bg-sky {
               background-color : #d3f0f9;
@@ -406,8 +426,19 @@ const projectList = ref([
       }
 
       .contact {
+        &.link {
+          .contact-list {
+            display: inline-flex;
+            margin: 0 20px 0 0;
+          }
+        }
+
         &-list {
           margin-bottom: 30px;
+
+          &-link {
+            display: inline-block;
+          }
         }
       }
     }
