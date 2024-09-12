@@ -2,7 +2,7 @@
   <div class="container">
 
     <!-- 배너 -->
-    <div class="banner">
+    <div class="banner" id="Introduce">
       <div class="banner-image">
         <img src="/assets/images/default/profile.jpg" alt="프로필 이미지">
       </div>
@@ -26,7 +26,7 @@
     <!-- // 배너 -->
 
     <!-- 기술 -->
-    <div class="row">
+    <div class="row" id="Skills">
       <div class="title">Skills</div>
       <div class="cont">
         <div class="slider">
@@ -43,7 +43,7 @@
     </div>
     <!-- // 기술 -->
 
-    <div class="row">
+    <div class="row" id="Tools">
       <div class="title">Tools</div>
       <div class="cont">
         <div class="slider">
@@ -60,7 +60,7 @@
     </div>
 
     <!-- 프로젝트 -->
-    <div class="row">
+    <div class="row" id="Project">
       <div class="title">Project</div>
       <div class="cont">
         <div class="slider project">
@@ -100,7 +100,7 @@
 
 
     <!-- 연락처 -->
-    <div class="row">
+    <div class="row" id="Contact">
       <div class="title">Contact</div>
       <div class="cont">
         <ul class="contact">
@@ -293,155 +293,8 @@ const projectList = ref([
     index: 11
   }
 ])
-
 </script>
 
 <style lang="scss" scoped>
-.container {
-  .banner {
-    display: flex;
-    gap: 100px;
-    padding-top: 120px;
-
-    &-image {
-      border-radius: 50px;
-      overflow: hidden;
-
-      img {
-        width: 460px;
-      }
-    }
-
-    &-text {
-      flex: 1;
-      line-height: 1.5;
-      padding: 60px 0;
-
-      &-title {
-        font-size: 40px;
-      }
-
-      .line {
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #ffff00;
-        -webkit-text-fill-color: #222;
-      }
-
-      .en {
-        font-size: var(--font-xl);
-      }
-
-      &-sub {
-        margin-top: 30px;
-        line-height: 2;
-        font-size: var(--font-xl);
-      }
-    }
-  }
-
-  .row {
-    margin-top: 100px;
-
-    .title {
-      font-size: 30px;
-      margin-bottom: 30px;
-    }
-
-    .cont {
-      .slider {
-        &.project {
-          .item {
-            background-color: #333;
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            background-position: center;
-            height: 428px;
-            border: 0;
-            padding: 0;
-
-            &.bg-sky {
-              background-color : #d3f0f9;
-            }
-
-            &.bg-green {
-              background-color: #eaf9fa;
-            }
-
-            &.bg-mint {
-              background-color: #333;
-            }
-
-            &.bg-blue {
-              background-color: #e8f0fe;
-            }
-
-            &.bg-gray {
-              background-color: #f7f7f7;
-            }
-
-            &.bg-purple {
-              /*background-color: #f2effb;*/
-              background-color: #eef5fc;
-            }
-
-            &.bg-black {
-              background-color: #333;
-            }
-
-            &.bg-white {
-              background-color: #fff;
-            }
-          }
-        }
-      }
-
-      .item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 20px;
-        padding: 34px 0;
-        background: #333;
-        border: 3px solid #555;
-        border-radius: 30px;
-        font-size: var(--font-xxl);
-
-        &.svn {
-          img {
-            border-radius: 15px;
-          }
-        }
-        
-        img {
-          max-height: 50px;
-        }
-
-        &-link {
-          @include size(100%, 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-
-      .contact {
-        &.link {
-          .contact-list {
-            display: inline-flex;
-            margin: 0 20px 0 0;
-          }
-        }
-
-        &-list {
-          margin-bottom: 30px;
-
-          &-link {
-            display: inline-block;
-          }
-        }
-      }
-    }
-  }
-}
+@import '/assets/scss/pages/index.scss';
 </style>

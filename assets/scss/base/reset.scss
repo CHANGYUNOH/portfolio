@@ -3,9 +3,16 @@ html, body {
   font-family:  "EliceNeolli", "Nanum Gothic", "dotum", sans-serif;
   font-size: var(--font-base);
   font-weight: 400;
-  color: #333;
+  background: #222;
+  color: #fff;
   line-height: 1;
   letter-spacing: -0.025em;
+  @include transition;
+
+  &:has([data-main-theme="light"]) {
+    background: #fff;
+    color: #333;
+  }
 }
 
 * {
