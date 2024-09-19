@@ -1,4 +1,22 @@
 footer {
   padding: 45px 0;
   color: #999;
+  position: relative;
+
+  .top-button {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    @include size(65px, 65px);
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+
+    .icon {
+      display: inline-block;
+      background: url($imgUrl + "/button/btn_top.png") no-repeat;
+      background-size: auto 100%;
+      @include size(35px, 35px);
+    }
+  }
 }

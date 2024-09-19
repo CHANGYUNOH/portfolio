@@ -109,8 +109,16 @@
           <li class="contact-list">Phone: 010-6651-1375</li>
         </ul>
         <ul class="contact link">
-          <li class="contact-list"><nuxt-link to="https://ncg1375.tistory.com" class="contact-list-link"><img src="/assets/images/icon/icon_tstory.png" alt="티스토리"></nuxt-link></li>
-          <li class="contact-list"><nuxt-link to="https://github.com/CHANGYUNOH" class="contact-list-link"><img src="/assets/images/icon/icon_github.png" alt="깃헙"></nuxt-link></li>
+          <li class="contact-list">
+            <nuxt-link to="https://ncg1375.tistory.com" target="_blank" class="contact-list-link">
+              <img src="/assets/images/icon/icon_tstory.png" alt="티스토리">
+            </nuxt-link>
+          </li>
+          <li class="contact-list">
+            <nuxt-link to="https://github.com/CHANGYUNOH" target="_blank" class="contact-list-link">
+              <img src="/assets/images/icon/icon_github.png" alt="깃헙">
+            </nuxt-link>
+          </li>
         </ul>
       </div>
     </div>

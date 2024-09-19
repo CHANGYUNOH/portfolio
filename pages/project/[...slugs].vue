@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <template v-if="slugs == 0">
-        <div class="row-inner">
+        <div class="row-inner gamification">
           <nuxt-link to="https://game.wbsoft.kr/gate" target="_blank" class="thumb">
             <img src="/assets/images/default/project_gamification.png" alt="타임교육 C&P 교육서비스의 게이미피케이션 활용에 관한 사전연구 수행사업">
           </nuxt-link>
@@ -34,7 +34,7 @@
         </div>
       </template>
       <template v-else-if="slugs == 2">
-        <div class="row-inner">
+        <div class="row-inner hdream">
           <nuxt-link to="https://www.hdream.or.kr" target="_blank" class="thumb">
             <img src="/assets/images/default/project_hncareer.png" alt="하남교육재단 진로진학통합플랫폼 꿈노트 구축사업">
           </nuxt-link>
@@ -50,7 +50,7 @@
         </div>
       </template>
       <template v-else-if="slugs == 3">
-        <div class="row-inner">
+        <div class="row-inner hanabank">
           <nuxt-link to="https://campus.hanabank.com:18443/main.do" target="_blank" class="thumb">
             <img src="/assets/images/default/project_hanabank.png" alt="하나은행 디지털캠퍼스 평가시스템 구축사업">
           </nuxt-link>
@@ -66,7 +66,7 @@
         </div>
       </template>
       <template v-else-if="slugs == 4">
-        <div class="row-inner">
+        <div class="row-inner airforce">
           <nuxt-link to="https://af.wbsoft.kr" target="_blank" class="thumb">
             <img src="/assets/images/default/project_airforce.png" alt="공군교육사령부 공군 이러닝 무선기반체계 고도화 방안 연구 수행사업">
           </nuxt-link>
@@ -82,7 +82,7 @@
         </div>
       </template>
       <template v-else-if="slugs == 5">
-        <div class="row-inner">
+        <div class="row-inner mobis">
           <div class="thumb">
             <img src="/assets/images/default/project_mobis.png" alt="현대모비스 2024년 시스템 운영사업">
           </div>
@@ -130,7 +130,7 @@
         </div>
       </template>
       <template v-else-if="slugs == 8">
-        <div class="row-inner">
+        <div class="row-inner metlife">
           <nuxt-link to="https://tip.metlife.co.kr" target="_blank" class="thumb full">
             <img src="/assets/images/default/project_metlife.png" alt="메트라이프 통합교육플랫폼 TIP 시스템 구축사업">
           </nuxt-link>

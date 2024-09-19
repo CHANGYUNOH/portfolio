@@ -17,6 +17,37 @@
       align-items: center;
       gap: 40px;
 
+      &.gamification {
+        .thumb {
+          background: #eef5fc;
+        }
+      }
+
+
+      &.hdream, &.hanabank {
+        .thumb {
+          background: #eaf9fa;
+        }
+      }
+
+      &.airforce {
+        .thumb {
+          background: #e8f0fe;
+        }
+      }
+
+      &.mobis {
+        .thumb {
+          background: #f7f7f7;
+        }
+      }
+
+      &.metlife {
+        .thumb {
+          background: #eaf9fa;
+        }
+      }
+
       &.full {
         .thumb {
           &-img {
