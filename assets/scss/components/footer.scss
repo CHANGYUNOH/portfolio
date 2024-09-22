@@ -1,6 +1,6 @@
 footer {
   padding: 45px 0;
-  color: #999;
+  color: var(--colorText5);
   position: relative;
 
   .top-button {
@@ -11,12 +11,32 @@ footer {
     border-radius: 50%;
     border: 0;
     cursor: pointer;
+    z-index: 1;
+    @include transition;
+
+    &:hover {
+      background: var(--colorText6);
+    }
 
     .icon {
       display: inline-block;
       background: url($imgUrl + "/button/btn_top.png") no-repeat;
       background-size: auto 100%;
       @include size(35px, 35px);
+    }
+  }
+}
+
+@include responsive(mob)  {
+  footer {
+    .top-button {
+      right: 20px;
+      bottom: 30px;
+      @include size(50px);
+
+      .icon {
+        @include size(25px);
+      }
     }
   }
 }

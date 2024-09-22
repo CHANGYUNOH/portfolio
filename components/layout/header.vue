@@ -10,8 +10,22 @@
             <img src="/assets/images/icon/icon_moon.png" alt="moon" v-else-if="colorMode === 'light'">
           </transition>
         </li>
+        <li class="menu-list mob">
+          <button type="button" class="mob-menu" @click="showNav">
+            <span v-for="item in 3" />
+          </button>
+        </li>
       </ul>
     </div>
+    <nav class="navigation" ref="hasNav">
+      <nuxt-link to="/" class="btn-close" @click="btnClose">
+        <span v-for="item in 2" />
+      </nuxt-link>
+      <ul class="mob-menu">
+        <li class="mob-menu-list" v-for="item in menuList"><nuxt-link :to="'#' + item.name" class="mob-menu-link">{{ item.name }}</nuxt-link></li>
+      </ul>
+      <div class="footer">ⓒ 2024 CHANGYUNOH. All rights reserved.</div>
+    </nav>
   </header>
 </template>
 <script setup>
@@ -42,6 +56,21 @@ const menuList = ref([
     name: 'Contact'
   }
 ]);
+
+// 2024.09.22[cgnoh]: 모바일 메뉴 클릭 이벤트
+const showNav = () => {
+  document.querySelector('html').style.overflow = 'hidden';
+  hasNav.value.style.transform = "translateX(0)";
+}
+
+// 2024.09.29[cgnoh]: 모바일 메뉴 닫기 이벤트
+const btnClose = () => {
+  document.querySelector('html').style.overflow = 'auto';
+  hasNav.value.style.transform = "translateX(100%)";
+}
+
+const hasNav = ref();
+
 </script>
 <style lang="scss" scoped>
 @import '/assets/scss/components/header.scss';

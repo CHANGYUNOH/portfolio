@@ -4,13 +4,13 @@
       .cont {
         .item {
           background: #fff;
-          color: #333;
+          color: var(--colorText1);
         }
 
         .slider {
           &.project {
             .item {
-              border: 3px solid #333;
+              border: 3px solid var(--colorText1);
             }
           }
         }
@@ -57,6 +57,7 @@
     &-image {
       border-radius: 50px;
       overflow: hidden;
+      height: 100%;
 
       img {
         width: 460px;
@@ -102,7 +103,7 @@
       .slider {
         &.project {
           .item {
-            background-color: #333;
+            background-color: var(--colorText1);
             background-repeat: no-repeat;
             background-size: auto 100%;
             background-position: center;
@@ -116,10 +117,6 @@
 
             &.bg-green {
               background-color: #eaf9fa;
-            }
-
-            &.bg-mint {
-              background-color: #333;
             }
 
             &.bg-blue {
@@ -153,7 +150,7 @@
         flex-direction: column;
         gap: 20px;
         padding: 34px 0;
-        background: #333;
+        background: var(--colorText1);
         border: 3px solid #555;
         border-radius: 30px;
         font-size: var(--font-xxl);
@@ -190,6 +187,76 @@
           &-link {
             display: inline-block;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    .banner {
+      gap: 50px;
+      align-items: center;
+
+      &-text {
+        padding: 0;
+      }
+
+      &-image {
+        img {
+          width: 360px;
+        }
+      }
+    }
+  }
+
+  [data-main-theme=light] {
+    .container {
+      .banner {
+        gap: 50px;
+
+        &:before {
+          display: none;
+        }
+
+        &-text {
+          .line {
+            -webkit-text-fill-color: var(--colorWheel8);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive(tablet) {
+  [data-main-theme=light] {
+    .container {
+      .banner {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .container {
+    .banner {
+      flex-direction: column;
+    }
+  }
+}
+
+@include responsive(mob) {
+  .container {
+    .banner {
+      padding-top: 54px;
+
+      &-image {
+        img {
+          width: 100%;
         }
       }
     }

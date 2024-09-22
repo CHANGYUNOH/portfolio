@@ -30,9 +30,14 @@
       <div class="title">Skills</div>
       <div class="cont">
         <div class="slider">
-          <swiper :slidesPerView="6"
+          <swiper :slidesPerView="1"
                   :spaceBetween="20"
-                  :loop="true">
+                  :loop="true"
+                  :breakpoints="{
+                      '1200': { slidesPerView: 6 },
+                      '1024': { slidesPerView: 4 },
+                      '768' : { slidesPerView: 2 },
+                  }">
             <swiper-slide class="item" v-for="item in skillList">
               <p>{{ item.name }}</p>
               <img :src="`${item.url}`" :alt="item.name">
@@ -47,9 +52,14 @@
       <div class="title">Tools</div>
       <div class="cont">
         <div class="slider">
-          <swiper :slidesPerView="6"
+          <swiper :slidesPerView="1"
                   :spaceBetween="20"
-                  :loop="true">
+                  :loop="true"
+                  :breakpoints="{
+                      '1200': { slidesPerView: 6 },
+                      '1024': { slidesPerView: 4 },
+                      '768' : { slidesPerView: 2 },
+                  }">
             <swiper-slide class="item" v-for="(item, i) in toolList">
               <p>{{ item.name }}</p>
               <img :src="`${item.url}`" :alt="item.name">
@@ -64,7 +74,7 @@
       <div class="title">Project</div>
       <div class="cont">
         <div class="slider project">
-          <swiper :slidesPerView="1.8"
+          <swiper :slidesPerView="1"
                   :spaceBetween="20"
                   :loop="true"
                   :centeredSlides="true"
@@ -73,12 +83,16 @@
                   disableOnInteraction: false,
                   pauseOnMouseEnter: false,
                   }"
-                  :modules="[Autoplay]">
+                  :modules="[Autoplay]"
+                  :breakpoints="{
+                      '1200': { slidesPerView: 1.8 },
+                      '1024': { slidesPerView: 1.6 },
+                      '768' : { slidesPerView: 1.4 }
+                  }">
             <swiper-slide class="item"
                           :class="{
                           'bg-sky' : item.logo === projectHncareer,
                           'bg-green' : item.logo === projectHanabank || projectMetlife,
-                          'bg-mint' : item.logo === projectKnda,
                           'bg-blue' : item.logo === projectAirforce,
                           'bg-gray' : item.logo === projectMobis ,
                           'bg-purple' : item.logo === projectGamification,

@@ -2,7 +2,7 @@
   .container {
     .row-inner {
       .thumb {
-        border: 3px solid #333;
+        border: 3px solid var(--colorText1);
       }
     }
   }
@@ -64,7 +64,7 @@
 
       &.knda {
         .thumb {
-          background: #333;
+          background: var(--colorText1);
         }
       }
 
@@ -92,12 +92,35 @@
         }
 
         .desc {
-          font-size: 18px;
+          font-size: var(--font-lg);
 
           p {
             line-height: 2;
           }
         }
+      }
+    }
+  }
+}
+
+@include responsive(tablet) {
+  .container {
+    .row-inner {
+      .thumb {
+        width: 380px;
+      }
+    }
+  }
+}
+
+@include responsive(mob) {
+  .container {
+    .row-inner {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .thumb {
+        width: 100%;
       }
     }
   }
