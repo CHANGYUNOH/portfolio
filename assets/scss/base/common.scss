@@ -106,3 +106,42 @@ textarea {
   }
 }
 
+//버튼
+button {
+  font-family: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: auto!important;
+  }
+
+  &.btn-default {
+    background: var(--colorBg3);
+    color: var(--colorText1);
+
+    &:after {
+      background: var(--colorText6);
+    }
+
+    &.point {
+      background: #ffff00;
+      color: #333;
+
+      &:after {
+        background: #E5E500;
+      }
+    }
+  }
+}
+
+//버튼영역
+.btn-wrap {
+  display: flex;
+
+  .is-right {
+    margin-left: auto;
+  }
+}
+

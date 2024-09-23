@@ -101,7 +101,7 @@ header {
 }
 
 .navigation {
-  background: var(--colorText1);
+  background: #222;
   position: fixed;
   top: 0;
   width: 100%;
@@ -116,22 +116,23 @@ header {
     position: relative;
     @include size(25px);
     margin: 20px 20px 20px auto;
+    cursor: pointer;
 
     span {
       display: inline-block;
       width: 25px;
-      height: 2px;
+      height: 3px;
       background: #fff;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
 
       &:first-child {
-        transform: rotate(45deg);
+        transform: translate(-50%,-50%) rotate(45deg);
       }
 
       &:last-child {
-        transform: rotate(135deg);
+        transform: translate(-50%,-50%) rotate(135deg);
       }
     }
   }
@@ -174,7 +175,6 @@ header {
   .footer {
     margin-top: auto;
     padding: 30px 20px;
-    background: #222;
     color: var(--colorText3);
   }
 }
@@ -218,8 +218,6 @@ header {
         }
 
         .mob-menu {
-          background: none;
-          border: 0;
           cursor: pointer;
 
           span {

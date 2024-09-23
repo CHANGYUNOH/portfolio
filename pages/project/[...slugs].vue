@@ -12,7 +12,7 @@
               <p>🕐 기간: 2024.06 ~ 2024.08(3개월)</p>
               <p>🚀 성과: </p>
               <p>📌 역할: Api호출로 데이터 연동</p>
-              <P>🔨 기술: Nuxt.js</P>
+              <p>🔨 기술: Nuxt.js</p>
             </div>
           </div>
         </div>
@@ -193,6 +193,10 @@
           </div>
         </div>
       </template>
+      <div class="btn-wrap">
+        <button type="button" class="btn-default" @click="router.go(-1)">뒤로가기</button>
+        <button type="button" class="btn-default point is-right" @click="goToNext">다음으로</button>
+      </div>
     </div>
   </div>
 </template>
@@ -202,7 +206,22 @@ import projectOpenprompt from '~/assets/images/default/project_openprompt.png'
 import projectActesg from '~/assets/images/default/project_actesg.png'
 
 const route = useRoute();
+const router = useRouter();
 const slugs = route.params.slugs;
+
+// 2024.09.23[cgnoh]: 다음으로 클릭 이벤트
+const goToNext = () => {
+  router.push(`/project/${slugs}`);
+
+  // 현재 경로에서 마지막 숫자 부분을 추출
+  const currentPath = route.path;
+  const currentId = parseInt(currentPath.split('/').pop());
+
+  // 숫자를 1 증가시켜 새로운 경로로 이동
+  // 숫자가 12를 넘어가면 다시 0으로, 그렇지 않으면 +1
+  const nextId = currentId >= 11 ? 0 : currentId + 1;
+  router.push(`/project/${nextId}`);
+}
 
 definePageMeta({
   layout: 'default',

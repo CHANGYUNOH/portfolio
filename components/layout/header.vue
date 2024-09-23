@@ -18,11 +18,13 @@
       </ul>
     </div>
     <nav class="navigation" ref="hasNav">
-      <nuxt-link to="/" class="btn-close" @click="btnClose">
+      <button type="button" class="btn-close" @click="btnClose">
         <span v-for="item in 2" />
-      </nuxt-link>
+      </button>
       <ul class="mob-menu">
-        <li class="mob-menu-list" v-for="item in menuList"><nuxt-link :to="'#' + item.name" class="mob-menu-link">{{ item.name }}</nuxt-link></li>
+        <li class="mob-menu-list" v-for="item in menuList">
+           <button type="button" class="mob-menu-link" @click="menuLink(item.name)">{{ item.name }}</button>
+        </li>
       </ul>
       <div class="footer">ⓒ 2024 CHANGYUNOH. All rights reserved.</div>
     </nav>
@@ -30,8 +32,10 @@
 </template>
 <script setup>
 const route = useRoute();
+const router = useRouter();
 const { $storage } = useNuxtApp();
 const { colorMode } = $storage;
+const hasNav = ref(); // 네비유무
 
 // 2024.09.10[cgnoh]: 아이콘 변화 이벤트
 const themeChange = () => {
@@ -57,6 +61,18 @@ const menuList = ref([
   }
 ]);
 
+// 2024.09.23[cgnoh]: 메뉴링크 이벤트
+const menuLink = (name) => {
+  router.push('/');
+  document.querySelector('html').style.overflow = 'auto';
+  hasNav.value.style.transform = "translateX(100%)";
+
+  const targetElement = document.getElementById(name);
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 // 2024.09.22[cgnoh]: 모바일 메뉴 클릭 이벤트
 const showNav = () => {
   document.querySelector('html').style.overflow = 'hidden';
@@ -68,8 +84,6 @@ const btnClose = () => {
   document.querySelector('html').style.overflow = 'auto';
   hasNav.value.style.transform = "translateX(100%)";
 }
-
-const hasNav = ref();
 
 </script>
 <style lang="scss" scoped>

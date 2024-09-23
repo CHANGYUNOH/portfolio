@@ -3,8 +3,14 @@
 
     <!-- 배너 -->
     <div class="banner" id="Introduce">
-      <div class="banner-image">
-        <img src="/assets/images/default/profile.jpg" alt="프로필 이미지">
+      <div class="banner-image" :class="{ 'is-active' : bannerImage }" @click="bannerImage = !bannerImage">
+        <img src="/assets/images/default/profile.jpg" class="front" alt="프로필 이미지">
+        <ul class="back">
+          <li class="back-list"><span class="tit">Email</span>｜no940901@gmail.com</li>
+          <li class="back-list"><span class="tit">Phone</span>｜010-6651-1375</li>
+          <li class="back-list"><span class="tit">Blog</span>｜https://ncg1375.tistory.com</li>
+          <li class="back-list"><span class="tit">GitHub</span>｜ https://github.com/NOHCHANGYU</li>
+        </ul>
       </div>
       <div class="banner-text">
         <div class="banner-text-title">
@@ -133,6 +139,11 @@
               <img src="/assets/images/icon/icon_github.png" alt="깃헙">
             </nuxt-link>
           </li>
+          <li class="contact-list">
+            <nuxt-link to="https://forested-cent-ed3.notion.site/0b840fc162744ef580df0ccce3ff12f9?pvs=4" target="_blank" class="contact-list-link notion">
+              <img src="/assets/images/icon/icon_notion.png" alt="노션">
+            </nuxt-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -157,6 +168,7 @@ import iconGulp from '~/assets/images/icon/icon_gulp.png';
 import iconVite from '~/assets/images/icon/icon_vite.png';
 import iconPhotoshop from '~/assets/images/icon/icon_photoshop.png';
 import iconGitlab from '~/assets/images/icon/icon_gitlab.png';
+import iconGithub from '~/assets/images/icon/icon_github.png';
 import iconTrello from '~/assets/images/icon/icon_trello.png';
 import iconRedmine from '~/assets/images/icon/icon_redmine.png';
 import iconSvn from '~/assets/images/icon/icon_svn.png';
@@ -225,6 +237,10 @@ const toolList = ref([
   {
     name: 'GitLab',
     url: iconGitlab
+  },
+  {
+    name: 'GitHub',
+    url: iconGithub
   },
   {
     name: 'Trello',
@@ -314,7 +330,10 @@ const projectList = ref([
     logo: projectHanati,
     index: 11
   }
-])
+]);
+
+// 2024.09.23[cgnoh]: 카드 플립 이벤트
+const bannerImage = ref(false);
 </script>
 
 <style lang="scss" scoped>

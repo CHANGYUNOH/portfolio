@@ -55,12 +55,48 @@
     }
 
     &-image {
-      border-radius: 50px;
-      overflow: hidden;
+      width: 460px;
       height: 100%;
+      position: relative;
+      perspective: 1200px;
+      cursor: pointer;
+      aspect-ratio: 1/1.5;
 
-      img {
-        width: 460px;
+      &.is-active {
+        .front {
+          transform: rotateY(180deg);
+        }
+
+        .back {
+          transform: rotateY(0);
+        }
+      }
+
+      .front {
+        border-radius: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include transition;
+      }
+
+      .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        transform: rotateY(-180deg);
+        @include transition;
+        border-radius: 50px;
+        backface-visibility: hidden;
+
+        &-list {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -186,6 +222,25 @@
 
           &-link {
             display: inline-block;
+
+            &.notion {
+              background: #fff;
+              border-radius: 50%;
+              @include size(50px, 50px);
+              position: relative;
+
+              img {
+                height: 40px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+
+            img {
+              height: 50px;
+            }
           }
         }
       }
@@ -201,12 +256,6 @@
 
       &-text {
         padding: 0;
-      }
-
-      &-image {
-        img {
-          width: 360px;
-        }
       }
     }
   }
@@ -252,9 +301,11 @@
 @include responsive(mob) {
   .container {
     .banner {
-      padding-top: 54px;
+      padding-top: 75px;
 
       &-image {
+        width: 100%;
+
         img {
           width: 100%;
         }

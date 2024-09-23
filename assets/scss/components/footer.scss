@@ -10,6 +10,7 @@ footer {
     @include size(65px, 65px);
     border-radius: 50%;
     border: 0;
+    background: var(--colorBg3);
     cursor: pointer;
     z-index: 1;
     @include transition;
