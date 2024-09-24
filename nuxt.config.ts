@@ -31,10 +31,11 @@ export default defineNuxtConfig({
         },
       ],
     },
-    baseURL: '/repository-name/', // 여기서 'repository-name'은 GitHub 저장소 이름입니다.
+    baseURL : '/my-repository-url/'
   },
-  nitro: {
-    preset: 'static', // 정적 사이트 생성을 위한 설정
+  ssr: false,
+  nitro : {
+    preset : 'github-pages'
   },
   vite: { // 공통 변수 scss
     css: {
