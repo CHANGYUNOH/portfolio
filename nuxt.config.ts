@@ -31,11 +31,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-    baseURL : '/my-repository-url/'
-  },
-  ssr: false,
-  nitro : {
-    preset : 'github-pages'
   },
   vite: { // 공통 변수 scss
     css: {
