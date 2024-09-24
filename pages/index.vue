@@ -54,6 +54,7 @@
     </div>
     <!-- // 기술 -->
 
+    <!-- 도구 -->
     <div class="row" id="Tools">
       <div class="title">Tools</div>
       <div class="cont">
@@ -66,7 +67,7 @@
                       '1024': { slidesPerView: 4 },
                       '768' : { slidesPerView: 2 },
                   }">
-            <swiper-slide class="item" v-for="(item, i) in toolList">
+            <swiper-slide class="item" v-for="item in toolList">
               <p>{{ item.name }}</p>
               <img :src="`${item.url}`" :alt="item.name">
             </swiper-slide>
@@ -74,6 +75,7 @@
         </div>
       </div>
     </div>
+    <!-- // 도구 -->
 
     <!-- 프로젝트 -->
     <div class="row" id="Project">
@@ -105,7 +107,7 @@
                           'bg-black' : item.logo === projectKnda,
                           'bg-white' : item.logo === projectHanati }"
                           :style="{backgroundImage: `url(${item.title})`}"
-                          v-for="item  in projectList">
+                          v-for="item in projectList">
               <nuxt-link :to="`/project/${item.index}`" class="item-link">
                 <span v-if="item.title !== projectSaasda && item.title !== projectOpenprompt && item.title !== projectActesg">
                   <img :src="`${item.logo}`" :alt="item.logo">
