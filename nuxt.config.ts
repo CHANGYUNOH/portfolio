@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-
   app: {
     head: {
       htmlAttrs: {
@@ -32,8 +31,11 @@ export default defineNuxtConfig({
         },
       ],
     },
+    baseURL: '/repository-name/', // 여기서 'repository-name'은 GitHub 저장소 이름입니다.
   },
-
+  nitro: {
+    preset: 'static', // 정적 사이트 생성을 위한 설정
+  },
   vite: { // 공통 변수 scss
     css: {
       preprocessorOptions: {
