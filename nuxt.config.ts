@@ -1,8 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  ssr: true, // 서버 사이드 렌더링을 활성화 (기본값)
-  target: 'static', // 정적 사이트 생성
   app: {
     head: {
       htmlAttrs: {
@@ -32,7 +30,6 @@ export default defineNuxtConfig({
           content: '/ogImage.png',
         },
       ],
-      baseURL: '/repository-name/', // 프로젝트가 배포될 GitHub Pages 서브 디렉토리 경로
     },
   },
   vite: { // 공통 변수 scss
