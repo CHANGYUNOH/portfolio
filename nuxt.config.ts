@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  ssr: true, // 서버 사이드 렌더링을 활성화 (기본값)
+  target: 'static', // 정적 사이트 생성
   app: {
     head: {
       htmlAttrs: {
