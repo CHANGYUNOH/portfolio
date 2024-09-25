@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         lang: 'ko',
       },
       link: [{ rel: 'icon', href: '/favicon.ico' }],
-      title: 'WillBe DEFAULT NUXT PROJECT',
+      title: 'NOHCHANGYU NUXT PROJECT',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -30,6 +30,7 @@ export default defineNuxtConfig({
           content: '/ogImage.png',
         },
       ],
+      baseURL: '/repository-name/', // 프로젝트가 배포될 GitHub Pages 서브 디렉토리 경로
     },
   },
   vite: { // 공통 변수 scss
