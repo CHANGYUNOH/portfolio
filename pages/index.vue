@@ -87,9 +87,9 @@
                   :loop="true"
                   :centeredSlides="true"
                   :autoplay="{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: false,
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false,
                   }"
                   :modules="[Autoplay]"
                   :breakpoints="{

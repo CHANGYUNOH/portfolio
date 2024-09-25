@@ -295,6 +295,20 @@
     .banner {
       flex-direction: column;
     }
+
+    .row {
+      .cont {
+        .slider {
+          &.skills, &.tools {
+            .item {
+              &:hover {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

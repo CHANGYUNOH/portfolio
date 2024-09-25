@@ -8,12 +8,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 타임교육 C&P 교육서비스의 게이미피케이션 활용에 관한 사전연구 수행사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2024.06 ~ 2024.08(3개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: Api호출로 데이터 연동</p>
-              <p>🔨 기술: Nuxt.js</p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.06 ~ 2024.08(3개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">Api호출로 데이터 연동</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -24,12 +24,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 서비스형 소프트웨어(SaaS) 개발 및 육성 사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2023.07 ~ 2024.08(11개월)</p>
-              <p>🚀 성과: 처음으로 자체 서비스를 개발 및 구축</p>
-              <p>📌 역할: 대시보드 구성, 영상 플레이어 커스텀, 학습 차트 개발, 스와이퍼로 카드 리스트 구성</p>
-              <p>🔨 기술: Nuxt.js, video.js, chart.js, swiper.js</p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2023.07 ~ 2024.08(11개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">처음으로 자체 서비스를 개발 및 구축</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">대시보드 구성, 영상 플레이어 커스텀, 학습 차트 개발, 스와이퍼로 카드 리스트 구성</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, video.js, chart.js, swiper.js</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -40,12 +40,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 하남교육재단 진로진학통합플랫폼 꿈노트 구축사업</p>
-            <div class="desc">
-              <p>🕐기간: 2023.10 ~ 2024.08(11개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: Nuxt.js로 프로젝트 경험</p>
-              <p>🔨 기술: Nuxt.js</p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐기간:</span><span class="content">2023.10 ~ 2024.08(11개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">Nuxt.js로 프로젝트 경험</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -56,12 +56,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 하나은행 디지털캠퍼스 평가시스템 구축사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2024.02 ~ 2024.03(3개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: 내부망 구축 시스템 프로젝트</p>
-              <p>🔨 기술: </p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.02 ~ 2024.03(3개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">내부망 구축 시스템 프로젝트</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">test</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -72,12 +72,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 공군교육사령부 공군 이러닝 무선기반체계 고도화 방안 연구 수행사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2023.07 ~ 2023.12(6개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: Vue3로 작업</p>
-              <p>🔨 기술: </p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2023.07 ~ 2023.12(6개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">Vue3로 작업</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">test</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -88,12 +88,12 @@
           </div>
           <div class="content">
             <p class="title">프로젝트명: 현대모비스 2024년 시스템 운영사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2023.01 ~ 2023.12(1년)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할:</p>
-              <p>🔨 기술: eclipse</p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2023.01 ~ 2023.12(1년)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">eclipse</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -104,12 +104,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: OpenPrompt 서비스 사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2022.12 ~ 2023.08(9개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: </p>
-              <p>🔨 기술: Nuxt.js</p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.12 ~ 2023.08(9개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -120,12 +120,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: ACT! ESG 서비스 사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2022.12 ~ 2023.08(9개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: </p>
-              <p>🔨 기술: Nuxt.js</p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.12 ~ 2023.08(9개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -136,12 +136,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 메트라이프 통합교육플랫폼 TIP 시스템 구축사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2022.03 ~ 2023.03(1년)</p>
-              <p>🚀 성과: 처음으로 새로운 프레임워크 도입</p>
-              <p>📌 역할: 애자일 기법으로 운영했던 프로세스 경험</p>
-              <p>🔨 기술: Vue.js</p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.03 ~ 2023.03(1년)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">처음으로 새로운 프레임워크 도입</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">애자일 기법으로 운영했던 프로세스 경험</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Vue.js</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -152,12 +152,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 하나은행 디지털캠퍼스 고도화사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2022.01 ~ 2023.04(4개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: 이미 구축된 사이트에서 마이그레이션 작업, 크로스 브라우징 작업</p>
-              <p>🔨 기술: </p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.01 ~ 2023.04(4개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">이미 구축된 사이트에서 마이그레이션 작업, 크로스 브라우징 작업</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">test</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -168,12 +168,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 국립외교원 외교배움e 시스템 구축사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2021.09 ~  2022.06(10개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: 웹접근성, 웹표준 작업, 고도화 작업(화면 디자인 변경으로 인한 웹 리뉴얼), 유지보수 및 하자보수 작업</p>
-              <p>🔨 기술: </p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2021.09 ~  2022.06(10개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">웹접근성, 웹표준 작업, 고도화 작업(화면 디자인 변경으로 인한 웹 리뉴얼), 유지보수 및 하자보수 작업</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">test</span></li>
+            </ul>
           </div>
         </div>
       </template>
@@ -184,12 +184,12 @@
           </nuxt-link>
           <div class="content">
             <p class="title">프로젝트명: 하나금융티아이 DT UNIV 시스템 구축사업</p>
-            <div class="desc">
-              <p>🕐 기간: 2021.08 ~ 2022.03(8개월)</p>
-              <p>🚀 성과: </p>
-              <p>📌 역할: gulp를 통한 빌드시스템 경험</p>
-              <p>🔨 기술: </p>
-            </div>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2021.08 ~ 2022.03(8개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">test</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">gulp를 통한 빌드시스템 경험</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">test</span></li>
+            </ul>
           </div>
         </div>
       </template>

@@ -24,7 +24,6 @@
         }
       }
 
-
       &.hdream, &.hanabank {
         .thumb {
           background: #eaf9fa;
@@ -95,8 +94,18 @@
         .desc {
           font-size: var(--font-lg);
 
-          p {
+          &-list {
+            display: flex;
+            gap: 5px;
             line-height: 2;
+
+            .tit {
+              min-width: 68px;
+            }
+
+            .content {
+              flex: 1;
+            }
           }
         }
       }
@@ -135,6 +144,9 @@
       padding-top: 54px;
 
       &-inner {
+        gap: 30px;
+        margin-bottom: 50px;
+
         .thumb {
           width: 380px;
         }
@@ -151,6 +163,16 @@
 
       .thumb {
         width: 100%;
+      }
+
+      .content {
+        .desc-list {
+          gap: 0;
+
+          .tit {
+            min-width: 50px;
+          }
+        }
       }
     }
   }
