@@ -8,9 +8,7 @@
     "local": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "homepage" : "https://changyunoh.github.io/portfolio/",
-    "deploy" : "gh-pages --dotfiles -d .output/public"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",

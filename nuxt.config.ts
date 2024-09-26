@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  target: 'static',
   app: {
     head: {
       htmlAttrs: {
@@ -30,6 +31,7 @@ export default defineNuxtConfig({
           content: '/ogImage.png',
         },
       ],
+      baseURL: '/my-project/'  // GitHub Pages에서 서브디렉토리로 배포될 경우 설정
     },
   },
   vite: { // 공통 변수 scss
