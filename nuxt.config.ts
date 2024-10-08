@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         {
           hid: 'og-image',
           property: 'og:image',
-          content: '/ogImage.png',
+          content: '@/assets/default/profile.png',
         },
       ],
     },
