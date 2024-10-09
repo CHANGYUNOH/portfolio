@@ -11,8 +11,8 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'title', name: 'title', content: '사이트타이틀' }, // meta description
-        { hid: 'description', name: 'description', content: '사이트설명문구' }, // meta description
+        { hid: 'title', name: 'title', content: '노찬규 - 포트폴리오' }, // meta description
+        { hid: 'description', name: 'description', content: '어제보단 나은 오늘을 추구하는 사람, 노찬규입니다.' }, // meta description
           // 오픈그래프추가
         {
           hid: 'og-title',
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         {
           hid: 'og-image',
           property: 'og:image',
-          content: '@import "@/assets/default/profile.jpg";',
+          content: '@import "@/assets/images/default/profile.jpg";',
         },
       ],
     },
