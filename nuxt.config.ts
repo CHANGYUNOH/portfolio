@@ -17,17 +17,17 @@ export default defineNuxtConfig({
         {
           hid: 'og-title',
           property: 'og:title',
-          content: '오픈그래프타이틀',
+          content: '노찬규 - 포트폴리오',
         },
         {
           hid: 'og-description',
           property: 'og:description',
-          content: '오픈그래프설명문구',
+          content: '어제보단 나은 오늘을 추구하는 사람, 노찬규입니다.',
         },
         {
           hid: 'og-image',
           property: 'og:image',
-          content: '@/assets/default/profile.png',
+          content: '@import "@/assets/default/profile.png";',
         },
       ],
     },
