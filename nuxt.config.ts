@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'ko',
       },
-      link: [{ rel: 'icon', href: '/favicon.ico' }],
+      link: [{ rel: 'icon', href: '/pingpong.png' }],
       title: 'NOHCHANGYU NUXT PROJECT',
       meta: [
         { charset: 'utf-8' },
