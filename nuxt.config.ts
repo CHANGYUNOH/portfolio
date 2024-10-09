@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         {
           hid: 'og-image',
           property: 'og:image',
-          content: '@import "@/assets/images/default/profile.jpg";',
+          content: '/profile.jpg',
         },
       ],
     },
