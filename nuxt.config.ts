@@ -15,19 +15,24 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: '어제보단 나은 오늘을 추구하는 사람, 노찬규입니다.' }, // meta description
           // 오픈그래프추가
         {
-          hid: 'og-title',
           property: 'og:title',
           content: '노찬규 - 포트폴리오',
         },
         {
-          hid: 'og-description',
           property: 'og:description',
           content: '어제보단 나은 오늘을 추구하는 사람, 노찬규입니다.',
         },
         {
-          hid: 'og-image',
           property: 'og:image',
           content: '/profile.jpg',
+        },
+        {
+          property: 'og:url',
+          content: 'https://changyu-project.netlify.app',  // 포트폴리오 URL 추가
+        },
+        {
+          property: 'og:type',
+          content: 'website',  // 사이트 유형 설정
         },
       ],
     },
