@@ -10,6 +10,11 @@
           <li class="back-list"><span class="tit">Phone</span>｜010-6651-1375</li>
           <li class="back-list"><span class="tit">Blog</span>｜https://ncg1375.tistory.com</li>
           <li class="back-list"><span class="tit">GitHub</span>｜ https://github.com/NOHCHANGYU</li>
+          <li class="back-list">
+            <span class="tit hash">커뮤니케이션</span>
+            <span class="tit hash">도전정신</span>
+            <span class="tit hash">문제해결능력</span>
+          </li>
         </ul>
       </div>
       <div class="banner-text">
