@@ -6,7 +6,7 @@
       <div class="banner-image" :class="{ 'is-active' : bannerImage }" @click="bannerImage = !bannerImage">
         <img src="/assets/images/default/profile.jpg" class="front" alt="프로필 이미지">
         <ul class="back">
-          <li class="back-list"><span class="tit">Email</span>｜no940901@gmail.com</li>
+          <li class="back-list"><span class="tit">Email</span>｜nohx051@naver.com</li>
           <li class="back-list"><span class="tit">Phone</span>｜010-6651-1375</li>
           <li class="back-list"><span class="tit">Blog</span>｜https://ncg1375.tistory.com</li>
           <li class="back-list"><span class="tit">GitHub</span>｜ https://github.com/NOHCHANGYU</li>
@@ -127,7 +127,7 @@
       <div class="cont">
         <ul class="contact">
           <li class="contact-list">name: NOHCHANGYU</li>
-          <li class="contact-list">Email: no940901@gmail.com</li>
+          <li class="contact-list">Email: nohx051@naver.com</li>
           <li class="contact-list">Phone: 010-6651-1375</li>
         </ul>
         <ul class="contact link">
