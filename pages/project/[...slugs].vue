@@ -139,7 +139,7 @@
             <ul class="desc">
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.03 ~ 2023.03(1년)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">메트라이프 통합교육플랫폼 ‘TIP’ 구축</span></li>
-              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">애자일 기법 프로세스로 의사소통 경험, Vue.js 프레임워크 도입 작업</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">Vue.js 프레임워크 도입 작업</span></li>
               <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Vue.js, Chart.js, Video.js, Fontagon, Swiper.js</span></li>
             </ul>
           </div>
