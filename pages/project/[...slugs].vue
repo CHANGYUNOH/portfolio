@@ -12,7 +12,7 @@
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.06 ~ 2024.08(3개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">기본 프로젝트 세팅 및 가이드 작성으로 개발 작업 진척도 향상</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">사용자 대시보드 페이지 작업, api호출로 데이터 연동</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Saas, Swiper.js, Toast UI, Datepicker</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Sass, Swiper.js, Toast UI, Datepicker</span></li>
             </ul>
           </div>
         </div>
@@ -44,7 +44,7 @@
               <li class="desc-list"><span class="tit">🕐기간:</span><span class="content">2023.10 ~ 2024.08(11개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">미리보기 팝업이 모달에서 새 창 팝업으로 변경, 차트 커스텀 및 수정</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">학습자 리스트, 상세 페이지 및 관리자 페이지 및 미리보기 팝업 작업</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Saas, Swiper.js, Chart.js, Toast UI</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Sass, Swiper.js, Chart.js, Toast UI</span></li>
             </ul>
           </div>
         </div>
@@ -108,7 +108,7 @@
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.12 ~ 2023.08(9개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">프롬프트 라이브러리 사이트 구축</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">리스트, 상세, 쓰기 페이지 작업</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Saas, Toast UI, Swiper.js</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Sass, Toast UI, Swiper.js</span></li>
             </ul>
           </div>
         </div>
@@ -124,7 +124,7 @@
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.12 ~ 2023.08(9개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">ESG 서비스 론칭</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">체크박스, 탭, 라벨, 팝업, 배너 작업</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Saas, Toast UI, Swiper.js</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt.js, Sass, Toast UI, Swiper.js</span></li>
             </ul>
           </div>
         </div>
