@@ -101,11 +101,6 @@
           word-break: break-all;
           line-height: 1.5;
 
-          &:last-child {
-            margin-bottom: 0;
-            margin-top: auto;
-          }
-
           .tit {
             &.hash {
               margin-right: 10px;

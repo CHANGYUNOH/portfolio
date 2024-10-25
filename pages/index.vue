@@ -6,15 +6,14 @@
       <div class="banner-image" :class="{ 'is-active' : bannerImage }" @click="bannerImage = !bannerImage">
         <img src="/assets/images/default/profile.jpg" class="front" alt="프로필 이미지">
         <ul class="back">
+          <li class="back-list"><span class="tit">노찬규</span>｜남, 1994 (30세)</li>
+          <li class="back-list"><span class="tit">경력</span>｜3년</li>
           <li class="back-list"><span class="tit">Email</span>｜nohx051@naver.com</li>
           <li class="back-list"><span class="tit">Phone</span>｜010-6651-1375</li>
-          <li class="back-list"><span class="tit">Blog</span>｜https://ncg1375.tistory.com</li>
-          <li class="back-list"><span class="tit">GitHub</span>｜ https://github.com/NOHCHANGYU</li>
-          <li class="back-list">
-            <span class="tit hash">커뮤니케이션</span>
-            <span class="tit hash">도전정신</span>
-            <span class="tit hash">문제해결능력</span>
-          </li>
+          <li class="back-list"><span class="tit">주소</span>｜서울 금천구 가산동</li>
+          <li class="back-list"><span class="tit">학력</span>｜대학졸업(4년제)</li>
+          <li class="back-list"><span class="tit">스킬</span>｜html, scss, javascript, vue.js, nuxt.js</li>
+          <li class="back-list"><span class="tit">능력</span>｜ #커뮤니케이션 #도전정신 #문제해결능력</li>
         </ul>
       </div>
       <div class="banner-text">
@@ -149,6 +148,11 @@
           <li class="contact-list">
             <nuxt-link to="https://forested-cent-ed3.notion.site/0b840fc162744ef580df0ccce3ff12f9?pvs=4" target="_blank" class="contact-list-link notion">
               <img src="/assets/images/icon/icon_notion.png" alt="노션">
+            </nuxt-link>
+          </li>
+          <li class="contact-list">
+            <nuxt-link to="https://open.kakao.com/o/sYnLHKVg" target="_blank" class="contact-list-link kakao">
+              <img src="/assets/images/icon/icon_kakao.png" alt="카카오톡">
             </nuxt-link>
           </li>
         </ul>
