@@ -60,7 +60,7 @@
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.02 ~ 2024.03(3개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">영문화 작업으로 개발 작업시간 단축</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">내부망 구축 시스템으로 평가 화면(리스트, 상세, 팝업 등) 퍼블리싱 작업, ES6문법으로 마이그레이션, 크로스 브라우징 작업(IE적용)</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Html, CSS, Jquery, Javascript, JSP</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">HTML, CSS, Jquery, Javascript, JSP</span></li>
             </ul>
           </div>
         </div>
@@ -156,7 +156,7 @@
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2022.01 ~ 2023.04(4개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">ES5 → ES6 마이그레이션</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">크로스 브라우징 작업(IE)</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Html, CSS, Jquery, Javascript, JSP</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">HTML, CSS, Jquery, Javascript, JSP</span></li>
             </ul>
           </div>
         </div>
@@ -172,7 +172,7 @@
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2021.09 ~  2022.06(10개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">외교부 국립외교원 ‘외교배움e’ 구축</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">웹유지보수 및 하자보수 작업, 고도화 작업(화면 디자인 변경으로 인한 웹 리뉴얼), 웹접근성, 웹표전 작업</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Html, CSS, Javascript, Gulp</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">HTML, CSS, Javascript, Gulp</span></li>
             </ul>
           </div>
         </div>
@@ -188,7 +188,7 @@
               <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2021.08 ~ 2022.03(8개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">하나금융티아이 DT UNIV 시스템 구축</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 유지보수 작업(학습자, 관리자)</span></li>
-              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Html, CSS, Javascript, Gulp</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">HTML, CSS, Javascript, Gulp</span></li>
             </ul>
           </div>
         </div>
