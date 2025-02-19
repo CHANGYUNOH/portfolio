@@ -193,6 +193,22 @@
           </div>
         </div>
       </template>
+      <template v-else-if="slugs == 12">
+        <div class="row-inner full">
+          <nuxt-link to="https://popgolf.kr" target="_blank" class="thumb">
+            <div class="thumb-img" :style="{backgroundImage: `url(${projectPopgolf})`}" />
+          </nuxt-link>
+          <div class="content">
+            <p class="title">팝골프 - 대규모 복합 골프 레저 파크 운영 사업</p>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.12 ~ 2025.02(2개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">팝골프 시설안내 지도를 활용한 확대/축소 기능 개발</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">HTML, SCSS, Javascript, Vue3</span></li>
+            </ul>
+          </div>
+        </div>
+      </template>
       <div class="btn-wrap">
         <button type="button" class="btn-default" @click="router.go(-1)">뒤로가기</button>
         <button type="button" class="btn-default point is-right" @click="goToNext">다음으로</button>
@@ -204,6 +220,7 @@
 import projectSaasda from '~/assets/images/default/project_saasda.png'
 import projectOpenprompt from '~/assets/images/default/project_openprompt.png'
 import projectActesg from '~/assets/images/default/project_actesg.png'
+import projectPopgolf from '~/assets/images/default/project_popgolf.png'
 
 const route = useRoute();
 const router = useRouter();

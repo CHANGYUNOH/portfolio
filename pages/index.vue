@@ -7,12 +7,12 @@
         <img src="/assets/images/default/profile.jpg" class="front" alt="프로필 이미지">
         <ul class="back">
           <li class="back-list"><span class="tit">노찬규</span>｜남, 1994 (30세)</li>
-          <li class="back-list"><span class="tit">경력</span>｜3년</li>
+          <li class="back-list"><span class="tit">경력</span>｜4년차</li>
           <li class="back-list"><span class="tit">Email</span>｜nohx051@naver.com</li>
           <li class="back-list"><span class="tit">Phone</span>｜010-6651-1375</li>
           <li class="back-list"><span class="tit">주소</span>｜서울 금천구 가산동</li>
           <li class="back-list"><span class="tit">학력</span>｜대학졸업(4년제)</li>
-          <li class="back-list"><span class="tit">스킬</span>｜html, scss, javascript, vue.js, nuxt.js</li>
+          <li class="back-list"><span class="tit">스킬</span>｜html, scss, javascript, vue.js, nuxt.js, react.js</li>
           <li class="back-list"><span class="tit">능력</span>｜ #커뮤니케이션 #도전정신 #문제해결능력</li>
         </ul>
       </div>
@@ -23,8 +23,8 @@
           <p>회사의 <span class="line">핵심인재</span>가 되겠습니다.</p>
         </div>
         <div class="banner-text-sub">
-          <p>3년 차 웹 퍼블리셔, 노찬규입니다.</p>
-          <p>교육 솔루션 개발 회사에서 웹서비스를 개발하였습니다.</p>
+          <p>4년 차 웹 퍼블리셔, 노찬규입니다.</p>
+          <p>교육 솔루션 개발 회사와 골프 시뮬레이션 제조업체에서 웹서비스를 개발하였습니다.</p>
           <p>솔루션사업본부의 팀원으로 합류되어서</p>
           <p>매출액 22%증가, 자산 19%증가에</p>
           <p>필요한 역량을 이바지 했던 경험이 있습니다.</p>
@@ -48,7 +48,7 @@
                       '1024': { slidesPerView: 4 },
                       '768' : { slidesPerView: 2 },
                   }">
-            <swiper-slide class="item" v-for="item in skillList">
+            <swiper-slide class="item" v-for="(item, index) in skillList" :key="index">
               <p>{{ item.name }}</p>
               <img :src="`${item.url}`" :alt="item.name">
             </swiper-slide>
@@ -71,7 +71,7 @@
                       '1024': { slidesPerView: 4 },
                       '768' : { slidesPerView: 2 },
                   }">
-            <swiper-slide class="item" v-for="item in toolList">
+            <swiper-slide class="item" v-for="(item, index) in toolList" :key="index">
               <p>{{ item.name }}</p>
               <img :src="`${item.url}`" :alt="item.name">
             </swiper-slide>
@@ -111,9 +111,9 @@
                           'bg-black' : item.logo === projectKnda,
                           'bg-white' : item.logo === projectHanati }"
                           :style="{backgroundImage: `url(${item.title})`}"
-                          v-for="item in projectList">
+                          v-for="(item, index) in projectList" :key="index">
               <nuxt-link :to="`/project/${item.index}`" class="item-link">
-                <span v-if="item.title !== projectSaasda && item.title !== projectOpenprompt && item.title !== projectActesg">
+                <span v-if="item.title !== projectSaasda && item.title !== projectOpenprompt && item.title !== projectActesg && item.title !== projectPopgolf">
                   <img :src="`${item.logo}`" :alt="item.logo">
                 </span>
               </nuxt-link>
@@ -177,6 +177,8 @@ import iconNuxt from '~/assets/images/icon/icon_nuxt.png';
 import iconJquery from '~/assets/images/icon/icon_jquery.png';
 import iconGulp from '~/assets/images/icon/icon_gulp.png';
 import iconVite from '~/assets/images/icon/icon_vite.png';
+import iconReact from '~/assets/images/icon/icon_react.png';
+
 import iconPhotoshop from '~/assets/images/icon/icon_photoshop.png';
 import iconGitlab from '~/assets/images/icon/icon_gitlab.png';
 import iconGithub from '~/assets/images/icon/icon_github.png';
@@ -198,6 +200,7 @@ import projectMetlife from '~/assets/images/default/project_metlife.png'
 import projectHncareer from '~/assets/images/default/project_hncareer.png'
 import projectHanabank from '~/assets/images/default/project_hanabank.png'
 import projectHanati from '~/assets/images/default/project_hanati.png'
+import projectPopgolf from '~/assets/images/default/project_popgolf.png'
 
 // 2024.09.10[cgnoh]: 스킬 리스트
 const skillList = ref([
@@ -236,6 +239,10 @@ const skillList = ref([
   {
     name: 'Vite',
     url: iconVite
+  },
+  {
+    name: 'React',
+    url: iconReact
   }
 ]);
 
@@ -340,6 +347,11 @@ const projectList = ref([
     name: '하나금융티아이 DT UNIV 시스템 구축사업',
     logo: projectHanati,
     index: 11
+  },
+  {
+    name: '팝골프 - 대규모 복합 골프 레저 파크 운영 사업',
+    title: projectPopgolf,
+    index: 12
   }
 ]);
 

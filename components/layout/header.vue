@@ -3,7 +3,7 @@
     <div class="container">
       <nuxt-link to="/">Portfolio</nuxt-link>
       <ul class="menu">
-        <li class="menu-list" v-for="item in menuList"><nuxt-link :to="'#' + item.name" v-if="!route.path.includes('/project')">{{ item.name }}</nuxt-link></li>
+        <li class="menu-list" v-for="item in menuList"><button type="button" @click="menuLink(item.name)" v-if="!route.path.includes('/project')">{{ item.name }}</button></li>
         <li class="menu-list icon" :title="colorMode === 'dark' ? '라이트모드' : '다크모드'" @click="themeChange">
           <transition name="fade">
             <img src="/assets/images/icon/icon_sun.png" alt="sun" v-if="colorMode === 'dark'">
@@ -63,7 +63,6 @@ const menuList = ref([
 
 // 2024.09.23[cgnoh]: 메뉴링크 이벤트
 const menuLink = (name) => {
-  router.push('/');
   document.querySelector('html').style.overflow = 'auto';
   hasNav.value.style.transform = "translateX(100%)";
 
