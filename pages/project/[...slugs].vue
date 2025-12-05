@@ -201,10 +201,42 @@
           <div class="content">
             <p class="title">팝골프 - 대규모 복합 골프 레저 파크 운영 사업</p>
             <ul class="desc">
-              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.12 ~ 2025.02(2개월)</span></li>
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.12 ~ 2025.03(3개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">팝골프 시설안내 지도를 활용한 확대/축소 기능 개발</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
               <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">HTML, SCSS, Javascript, Vue3</span></li>
+            </ul>
+          </div>
+        </div>
+      </template>
+      <template v-else-if="slugs == 13">
+        <div class="row-inner full">
+          <nuxt-link to="https://aimember.thegolf.com/" target="_blank" class="thumb">
+            <div class="thumb-img" :style="{backgroundImage: `url(${projectAimember})`}" />
+          </nuxt-link>
+          <div class="content">
+            <p class="title">AI 기반 스포츠 분석 시스템(회원)</p>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2025.04 ~ 2025.08(4개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI 스포츠 모션을 기반한 빅데이터 중심의 데이터 위주를 분석해서 나타내는 UI 개발</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt, Echarts.js, Video.js</span></li>
+            </ul>
+          </div>
+        </div>
+      </template>
+      <template v-else-if="slugs == 14">
+        <div class="row-inner">
+          <nuxt-link to="https://aicoach.thegolf.com/login" target="_blank" class="thumb">
+            <img src="/assets/images/default/project_aicoach.png" alt="AI기반 스포츠 분석 시스템 코칭">
+          </nuxt-link>
+          <div class="content">
+            <p class="title">AI 기반 스포츠 분석 시스템(코칭)</p>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2025.08 ~ 2025.12(4개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI 스포츠 모션을 기반한 빅데이터 중심의 데이터 위주를 분석해서 나타내는 UI 개발</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt, Echarts.js, Video.js</span></li>
             </ul>
           </div>
         </div>
@@ -221,6 +253,7 @@ import projectSaasda from '~/assets/images/default/project_saasda.png'
 import projectOpenprompt from '~/assets/images/default/project_openprompt.png'
 import projectActesg from '~/assets/images/default/project_actesg.png'
 import projectPopgolf from '~/assets/images/default/project_popgolf.png'
+import projectAimember from '~/assets/images/default/project_aimember.png'
 
 const route = useRoute();
 const router = useRouter();

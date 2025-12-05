@@ -106,14 +106,14 @@
                           'bg-sky' : item.logo === projectHncareer,
                           'bg-green' : item.logo === projectHanabank || projectMetlife,
                           'bg-blue' : item.logo === projectAirforce,
-                          'bg-gray' : item.logo === projectMobis ,
+                          'bg-gray' : item.logo === projectMobis,
                           'bg-purple' : item.logo === projectGamification,
                           'bg-black' : item.logo === projectKnda,
                           'bg-white' : item.logo === projectHanati }"
                           :style="{backgroundImage: `url(${item.title})`}"
                           v-for="(item, index) in projectList" :key="index">
               <nuxt-link :to="`/project/${item.index}`" class="item-link">
-                <span v-if="item.title !== projectSaasda && item.title !== projectOpenprompt && item.title !== projectActesg && item.title !== projectPopgolf">
+                <span v-if="item.title !== projectSaasda && item.title !== projectOpenprompt && item.title !== projectActesg && item.title !== projectPopgolf && item.title !== projectAimember">
                   <img :src="`${item.logo}`" :alt="item.logo">
                 </span>
               </nuxt-link>
@@ -201,6 +201,9 @@ import projectHncareer from '~/assets/images/default/project_hncareer.png'
 import projectHanabank from '~/assets/images/default/project_hanabank.png'
 import projectHanati from '~/assets/images/default/project_hanati.png'
 import projectPopgolf from '~/assets/images/default/project_popgolf.png'
+import projectAimember from '~/assets/images/default/project_aimember.png'
+import projectAicoach from '~/assets/images/default/project_aicoach.png'
+
 
 // 2024.09.10[cgnoh]: 스킬 리스트
 const skillList = ref([
@@ -352,6 +355,16 @@ const projectList = ref([
     name: '팝골프 - 대규모 복합 골프 레저 파크 운영 사업',
     title: projectPopgolf,
     index: 12
+  },
+  {
+    name: 'AI 기반 스포츠 분석 시스템(회원)',
+    title: projectAimember,
+    index: 13
+  },
+  {
+    name: 'AI 기반 스포츠 분석 시스템(코칭)',
+    logo: projectAicoach,
+    index: 14
   }
 ]);
 
