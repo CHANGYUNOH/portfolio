@@ -6,8 +6,8 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'ko',
       },
-      link: [{ rel: 'icon', href: '/' }],
-      title: 'NOHCHANGYU NUXT PROJECT',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      title: 'portfolio_노찬규',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

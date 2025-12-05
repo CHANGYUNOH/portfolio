@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">ⓒ 2024 CHANGYUNOH. All rights reserved.</div>
+    <div class="container">ⓒ 2026 CHANGYUNOH. All rights reserved.</div>
     <button type="button" class="top-button" @click="btnTop">
       <i class="icon" />
     </button>

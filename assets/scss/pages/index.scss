@@ -156,6 +156,10 @@
     .cont {
       .slider {
         &.project {
+          .swiper {
+            overflow: visible;
+          }
+
           .item {
             background-color: var(--colorText1);
             background-repeat: no-repeat;
@@ -208,6 +212,10 @@
         border: 3px solid #555;
         border-radius: 30px;
         font-size: var(--font-xxl);
+
+        p {
+          font-size: 20px;
+        }
 
         &.svn {
           img {

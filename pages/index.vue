@@ -23,11 +23,14 @@
           <p>회사의 <span class="line">핵심인재</span>가 되겠습니다.</p>
         </div>
         <div class="banner-text-sub">
-          <p>4년 차 웹 퍼블리셔, 노찬규입니다.</p>
+          <p>5년 차 웹 퍼블리셔, 노찬규입니다.</p>
           <p>교육 솔루션 개발 회사와 골프 시뮬레이션 제조업체에서 웹서비스를 개발하였습니다.</p>
           <p>솔루션사업본부의 팀원으로 합류되어서</p>
           <p>매출액 22%증가, 자산 19%증가에</p>
           <p>필요한 역량을 이바지 했던 경험이 있습니다.</p>
+
+          <p>기술연구소의 팀원으로 합류되어서</p>
+          <p>AI기반 스포츠 분석 시스템 역량 평가 87.4% 달성 경험</p>
           <br>
           <p>맡은 바 책임감을 가지고 끝까지 문제를 해결하는것을 추구합니다.</p>
         </div>
@@ -81,6 +84,29 @@
     </div>
     <!-- // 도구 -->
 
+    <!-- IDE -->
+    <div class="row" id="ide">
+      <div class="title">IDE</div>
+      <div class="cont">
+        <div class="slider">
+          <swiper :slidesPerView="1"
+                  :spaceBetween="20"
+                  :loop="true"
+                  :breakpoints="{
+                      '1200': { slidesPerView: 6 },
+                      '1024': { slidesPerView: 4 },
+                      '768' : { slidesPerView: 2 },
+                  }">
+            <swiper-slide class="item" v-for="(item, index) in ideList" :key="index">
+              <p>{{ item.name }}</p>
+              <img :src="`${item.url}`" :alt="item.name">
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </div>
+    <!-- // IDE -->
+
     <!-- 프로젝트 -->
     <div class="row" id="Project">
       <div class="title">Project</div>
@@ -91,7 +117,7 @@
                   :loop="true"
                   :centeredSlides="true"
                   :autoplay="{
-                    delay: 4000,
+                    delay: 3000,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
                   }"
@@ -188,6 +214,12 @@ import iconSvn from '~/assets/images/icon/icon_svn.png';
 import iconFigma from '~/assets/images/icon/icon_figma.png';
 import iconSpreadsheet from '~/assets/images/icon/icon_spread_sheet.png';
 import iconNotion from '~/assets/images/icon/icon_notion.png';
+import iconVscode from '~/assets/images/icon/icon_vscode.png';
+import iconChatgpt from '~/assets/images/icon/icon_chatgpt.png';
+import iconCursor from '~/assets/images/icon/icon_cursor.png';
+import iconGoogle from '~/assets/images/icon/icon_google_antigravity.png';
+import iconIntellij from '~/assets/images/icon/icon_intellij.png';
+import iconGemini from '~/assets/images/icon/icon_gemini.png';
 
 import projectSaasda from '~/assets/images/default/project_saasda.png'
 import projectActesg from '~/assets/images/default/project_actesg.png'
@@ -286,8 +318,35 @@ const toolList = ref([
   {
     name: 'Notion',
     url: iconNotion
+  },
+  {
+    name: 'Chat GPT',
+    url: iconChatgpt
+  },
+  {
+    name: 'Goggle Gemini',
+    url: iconGemini
   }
 ]);
+
+const ideList = ref([
+  {
+    name: 'VS code',
+    url: iconVscode
+  },
+  {
+    name: 'Intellij',
+    url: iconIntellij
+  },
+  {
+    name: 'Cursor AI',
+    url: iconCursor
+  },
+  {
+    name: 'Google Antigravity',
+    url: iconGoogle
+  }
+])
 
 // 2024.09.10[cgnoh]: 프로젝트 리스트
 const projectList = ref([
