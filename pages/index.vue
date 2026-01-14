@@ -4,15 +4,15 @@
     <!-- 배너 -->
     <div class="banner" id="Introduce">
       <div class="banner-image" :class="{ 'is-active' : bannerImage }" @click="bannerImage = !bannerImage">
-        <img src="/assets/images/default/profile.jpg" class="front" alt="프로필 이미지">
+        <img src="/assets/images/default/profile.png" class="front" alt="프로필 이미지">
         <ul class="back">
           <li class="back-list"><span class="tit">노찬규</span>｜남, 1994 (30세)</li>
-          <li class="back-list"><span class="tit">경력</span>｜4년차</li>
+          <li class="back-list"><span class="tit">경력</span>｜5년차</li>
           <li class="back-list"><span class="tit">Email</span>｜nohx051@naver.com</li>
           <li class="back-list"><span class="tit">Phone</span>｜010-6651-1375</li>
           <li class="back-list"><span class="tit">주소</span>｜서울 금천구 가산동</li>
           <li class="back-list"><span class="tit">학력</span>｜대학졸업(4년제)</li>
-          <li class="back-list"><span class="tit">스킬</span>｜html, scss, javascript, vue.js, nuxt.js, react.js</li>
+          <li class="back-list"><span class="tit">스킬</span>｜html, scss, javascript, vue.js, nuxt.js</li>
           <li class="back-list"><span class="tit">능력</span>｜ #커뮤니케이션 #도전정신 #문제해결능력</li>
         </ul>
       </div>
@@ -23,16 +23,10 @@
           <p>회사의 <span class="line">핵심인재</span>가 되겠습니다.</p>
         </div>
         <div class="banner-text-sub">
-          <p>5년 차 웹 퍼블리셔, 노찬규입니다.</p>
-          <p>교육 솔루션 개발 회사와 골프 시뮬레이션 제조업체에서 웹서비스를 개발하였습니다.</p>
-          <p>솔루션사업본부의 팀원으로 합류되어서</p>
-          <p>매출액 22%증가, 자산 19%증가에</p>
-          <p>필요한 역량을 이바지 했던 경험이 있습니다.</p>
-
-          <p>기술연구소의 팀원으로 합류되어서</p>
-          <p>AI기반 스포츠 분석 시스템 역량 평가 87.4% 달성 경험</p>
-          <br>
-          <p>맡은 바 책임감을 가지고 끝까지 문제를 해결하는것을 추구합니다.</p>
+          <p>솔루션 경험을 바탕으로 회사의 핵심 인재로 성장해온 5년 차 웹 퍼블리셔, 노찬규입니다.</p>
+          <p>교육 솔루션 및 골프 시뮬레이션 웹 서비스 개발 경험을 바탕으로,</p>
+          <p>매출 22%·자산 19% 증가와 AI 스포츠 분석 역량 평가 87.4% 달성에 기여했습니다.</p>
+          <p>책임감을 가지고 문제를 끝까지 해결하며, 서비스와 조직의 성장을 만들어가는 인재입니다.</p>
         </div>
       </div>
     </div>
@@ -106,6 +100,10 @@
       </div>
     </div>
     <!-- // IDE -->
+
+    <!-- Study -->
+
+    <!-- // Study -->
 
     <!-- 프로젝트 -->
     <div class="row" id="Project">
