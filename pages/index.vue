@@ -322,7 +322,7 @@ const toolList = ref([
     url: iconChatgpt
   },
   {
-    name: 'Goggle Gemini',
+    name: 'Google Gemini',
     url: iconGemini
   }
 ]);
