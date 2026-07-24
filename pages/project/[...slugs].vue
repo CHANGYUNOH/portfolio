@@ -241,6 +241,22 @@
           </div>
         </div>
       </template>
+      <template v-else-if="slugs == 15">
+        <div class="row-inner">
+          <nuxt-link to="https://aishop.thegolf.com/login" target="_blank" class="thumb">
+            <img src="/assets/images/default/project_aicoach.png" alt="AI기반 스포츠 분석 시스템 코칭">
+          </nuxt-link>
+          <div class="content">
+            <p class="title">AI 기반 스포츠 분석 시스템(매장)</p>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2026.01 ~ 2025.4(진행중)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI 스포츠 모션을 기반한 빅데이터 중심의 데이터 위주를 분석해서 나타내는 UI 개발</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt, Fullcalendar, Toast-ui, ECharts, Swiper, Video.js</span></li>
+            </ul>
+          </div>
+        </div>
+      </template>
       <div class="btn-wrap">
         <button type="button" class="btn-default" @click="router.go(-1)">뒤로가기</button>
         <button type="button" class="btn-default point is-right" @click="goToNext">다음으로</button>

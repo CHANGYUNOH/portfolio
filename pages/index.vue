@@ -101,8 +101,31 @@
     </div>
     <!-- // IDE -->
 
-    <!-- Study -->
+    <!-- DB -->
+    <div class="row" id="db">
+      <div class="title">DB</div>
+      <div class="cont">
+        <div class="slider">
+          <swiper :slidesPerView="1"
+                  :spaceBetween="20"
+                  :loop="true"
+                  :breakpoints="{
+                      '1200': { slidesPerView: 6 },
+                      '1024': { slidesPerView: 4 },
+                      '768' : { slidesPerView: 2 },
+                  }">
+            <swiper-slide class="item" v-for="(item, index) in dbList" :key="index">
+              <p>{{ item.name }}</p>
+              <img :src="`${item.url}`" :alt="item.name">
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
+    </div>
+    <!-- // DB -->
 
+    <!-- Study -->
+    
     <!-- // Study -->
 
     <!-- 프로젝트 -->
@@ -133,7 +156,8 @@
                           'bg-gray' : item.logo === projectMobis,
                           'bg-purple' : item.logo === projectGamification,
                           'bg-black' : item.logo === projectKnda,
-                          'bg-white' : item.logo === projectHanati }"
+                          'bg-white' : item.logo === projectHanati
+                          }"
                           :style="{backgroundImage: `url(${item.title})`}"
                           v-for="(item, index) in projectList" :key="index">
               <nuxt-link :to="`/project/${item.index}`" class="item-link">
@@ -233,6 +257,7 @@ import projectHanati from '~/assets/images/default/project_hanati.png'
 import projectPopgolf from '~/assets/images/default/project_popgolf.png'
 import projectAimember from '~/assets/images/default/project_aimember.png'
 import projectAicoach from '~/assets/images/default/project_aicoach.png'
+import projectAishop from '~/assets/images/default/project_aicoach.png'
 
 
 // 2024.09.10[cgnoh]: 스킬 리스트
@@ -276,7 +301,11 @@ const skillList = ref([
   {
     name: 'React',
     url: iconReact
-  }
+  },
+  // {
+  //   name: 'Php',
+  //   url: iconPhp
+  // }
 ]);
 
 // 2024.09.10[cgnoh]: 툴 리스트
@@ -327,22 +356,10 @@ const toolList = ref([
   }
 ]);
 
-const ideList = ref([
+const dbList = ref([
   {
-    name: 'VS code',
-    url: iconVscode
-  },
-  {
-    name: 'Intellij',
-    url: iconIntellij
-  },
-  {
-    name: 'Cursor AI',
-    url: iconCursor
-  },
-  {
-    name: 'Google Antigravity',
-    url: iconGoogle
+    name: 'My SQL',
+    // url: iconMysql
   }
 ])
 
@@ -419,10 +436,15 @@ const projectList = ref([
     index: 13
   },
   {
-    name: 'AI 기반 스포츠 분석 시스템(코칭)',
+    name: 'AI 기반 스포츠 분석 시스템(코치)',
     logo: projectAicoach,
     index: 14
-  }
+  },
+  {
+    name: 'AI 기반 스포츠 분석 시스템(매장)',
+    logo: projectAishop,
+    index: 15
+  },
 ]);
 
 // 2024.09.23[cgnoh]: 카드 플립 이벤트
