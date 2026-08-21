@@ -201,7 +201,7 @@
           <div class="content">
             <p class="title">팝골프 - 대규모 복합 골프 레저 파크 운영 사업</p>
             <ul class="desc">
-              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.12 ~ 2025.03(3개월)</span></li>
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2024.12 ~ 2025.03(4개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">팝골프 시설안내 지도를 활용한 확대/축소 기능 개발</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
               <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">HTML, SCSS, Javascript, Vue3</span></li>
@@ -217,7 +217,7 @@
           <div class="content">
             <p class="title">AI 기반 스포츠 분석 시스템(회원)</p>
             <ul class="desc">
-              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2025.04 ~ 2025.08(4개월)</span></li>
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2025.04 ~ 2025.07(4개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI 스포츠 모션을 기반한 빅데이터 중심의 데이터 위주를 분석해서 나타내는 UI 개발</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
               <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt, Echarts.js, Video.js</span></li>
@@ -233,7 +233,7 @@
           <div class="content">
             <p class="title">AI 기반 스포츠 분석 시스템(코칭)</p>
             <ul class="desc">
-              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2025.08 ~ 2025.12(4개월)</span></li>
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2025.08 ~ 2025.11(4개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI 스포츠 모션을 기반한 빅데이터 중심의 데이터 위주를 분석해서 나타내는 UI 개발</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
               <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt, Echarts.js, Video.js</span></li>
@@ -249,7 +249,7 @@
           <div class="content">
             <p class="title">AI 기반 스포츠 분석 시스템(매장)</p>
             <ul class="desc">
-              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2026.01 ~ 2025.4(진행중)</span></li>
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2025.12 ~ 2026.03(4개월)</span></li>
               <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI 스포츠 모션을 기반한 빅데이터 중심의 데이터 위주를 분석해서 나타내는 UI 개발</span></li>
               <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
               <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt, Fullcalendar, Toast-ui, ECharts, Swiper, Video.js</span></li>
@@ -257,8 +257,58 @@
           </div>
         </div>
       </template>
+      <template v-else-if="slugs == 16">
+        <div class="row-inner">
+          <nuxt-link to="https://aishop.thegolf.com/login" target="_blank" class="thumb">
+            <img src="/assets/images/default/project_aicoach.png" alt="AI기반 스포츠 분석 시스템 코칭">
+          </nuxt-link>
+          <div class="content">
+            <p class="title">AI 기반 스포츠 분석 시스템(관리자)</p>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2026.04 ~ 2026.07(4개월)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI 스포츠 모션을 기반한 빅데이터 중심의 데이터 위주를 분석해서 나타내는 UI 개발</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Nuxt, Fullcalendar, Toast-ui, ECharts, Swiper, Video.js</span></li>
+            </ul>
+          </div>
+        </div>
+      </template>
+      <template v-else-if="slugs == 17">
+        <div class="row-inner">
+          <nuxt-link to="https://xgolf-webapp.vercel.app/" target="_blank" class="thumb">
+            <img src="/assets/images/default/project_aicoach.png" alt="">
+          </nuxt-link>
+          <div class="content">
+            <p class="title">X-GOLF 회원 예약 앱</p>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2026.08 ~ (진행중)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI를 이용한 골프장 또는 골프 연습장의 운영과 고객 서비스를 하나의 웹앱에서 통합 관리하는 플랫폼 개발</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Claude Code, Supabase</span></li>
+            </ul>
+          </div>
+        </div>
+      </template>
+      <template v-else-if="slugs == 18">
+        <div class="row-inner">
+          <!-- https://ops.thegolf.com/ 또는 -->
+          <nuxt-link to="https://xgolf-ops.vercel.app/" target="_blank" class="thumb">
+            <img src="/assets/images/default/project_aicoach.png" alt="">
+          </nuxt-link>
+          <div class="content">
+            <p class="title">X-OPS(매장 관리 시스템) 사이트</p>
+            <ul class="desc">
+              <li class="desc-list"><span class="tit">🕐 기간:</span><span class="content">2026.08 ~ (진행중)</span></li>
+              <li class="desc-list"><span class="tit">🚀 성과:</span><span class="content">AI를 이용한 XGOLF의 스크린골프 매장을 이용하는 고객을 위한 예약·매장 이용 플랫폼 개발</span></li>
+              <li class="desc-list"><span class="tit">📌 역할:</span><span class="content">프로젝트 퍼블리싱 및 프론트 개발</span></li>
+              <li class="desc-list"><span class="tit">🔨 기술:</span><span class="content">Claude Code, Supabase</span></li>
+            </ul>
+          </div>
+        </div>
+      </template>
       <div class="btn-wrap">
-        <button type="button" class="btn-default" @click="router.go(-1)">뒤로가기</button>
+        <button type="button" class="btn-default" @click="goToPrev">뒤로가기</button>
+        <button type="button" class="btn-default" @click="goToList">목록으로</button>
         <button type="button" class="btn-default point is-right" @click="goToNext">다음으로</button>
       </div>
     </div>
@@ -273,19 +323,31 @@ import projectAimember from '~/assets/images/default/project_aimember.png'
 
 const route = useRoute();
 const router = useRouter();
-const slugs = route.params.slugs;
 
-// 2024.09.23[cgnoh]: 다음으로 클릭 이벤트
+// 2026.08.21[cgnoh]: 프로젝트 마지막 index (0 ~ PROJECT_LAST)
+const PROJECT_LAST = 18;
+
+// 2026.08.21[cgnoh]: 같은 페이지 내에서 라우트만 바뀌어도 갱신되도록 computed 처리
+const slugs = computed(() => {
+  const param = route.params.slugs;
+  const id = parseInt(Array.isArray(param) ? param[0] : param, 10);
+  return Number.isNaN(id) ? 0 : id;
+});
+
+// 2026.08.21[cgnoh]: 이전 프로젝트로 이동 (첫번째 프로젝트면 마지막으로 순환)
+const goToPrev = () => {
+  const prevId = slugs.value <= 0 ? PROJECT_LAST : slugs.value - 1;
+  router.push(`/project/${prevId}`);
+}
+
+// 2026.08.21[cgnoh]: 목록으로 이동 (메인의 Project 영역)
+const goToList = () => {
+  router.push('/#Project');
+}
+
+// 2024.09.23[cgnoh]: 다음 프로젝트로 이동 (마지막 프로젝트면 처음으로 순환)
 const goToNext = () => {
-  router.push(`/project/${slugs}`);
-
-  // 현재 경로에서 마지막 숫자 부분을 추출
-  const currentPath = route.path;
-  const currentId = parseInt(currentPath.split('/').pop());
-
-  // 숫자를 1 증가시켜 새로운 경로로 이동
-  // 숫자가 12를 넘어가면 다시 0으로, 그렇지 않으면 +1
-  const nextId = currentId >= 11 ? 0 : currentId + 1;
+  const nextId = slugs.value >= PROJECT_LAST ? 0 : slugs.value + 1;
   router.push(`/project/${nextId}`);
 }
 

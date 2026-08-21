@@ -139,6 +139,7 @@ button {
 //버튼영역
 .btn-wrap {
   display: flex;
+  gap: 10px;
 
   .is-right {
     margin-left: auto;

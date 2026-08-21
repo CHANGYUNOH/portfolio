@@ -101,33 +101,6 @@
     </div>
     <!-- // IDE -->
 
-    <!-- DB -->
-    <div class="row" id="db">
-      <div class="title">DB</div>
-      <div class="cont">
-        <div class="slider">
-          <swiper :slidesPerView="1"
-                  :spaceBetween="20"
-                  :loop="true"
-                  :breakpoints="{
-                      '1200': { slidesPerView: 6 },
-                      '1024': { slidesPerView: 4 },
-                      '768' : { slidesPerView: 2 },
-                  }">
-            <swiper-slide class="item" v-for="(item, index) in dbList" :key="index">
-              <p>{{ item.name }}</p>
-              <img :src="`${item.url}`" :alt="item.name">
-            </swiper-slide>
-          </swiper>
-        </div>
-      </div>
-    </div>
-    <!-- // DB -->
-
-    <!-- Study -->
-    
-    <!-- // Study -->
-
     <!-- 프로젝트 -->
     <div class="row" id="Project">
       <div class="title">Project</div>
@@ -302,10 +275,6 @@ const skillList = ref([
     name: 'React',
     url: iconReact
   },
-  // {
-  //   name: 'Php',
-  //   url: iconPhp
-  // }
 ]);
 
 // 2024.09.10[cgnoh]: 툴 리스트
@@ -356,12 +325,25 @@ const toolList = ref([
   }
 ]);
 
-const dbList = ref([
+// 2026.08.21[cgnoh]: IDE 리스트
+const ideList = ref([
   {
-    name: 'My SQL',
-    // url: iconMysql
+    name: 'VS Code',
+    url: iconVscode
+  },
+  {
+    name: 'Cursor',
+    url: iconCursor
+  },
+  {
+    name: 'IntelliJ',
+    url: iconIntellij
+  },
+  {
+    name: 'Google Antigravity',
+    url: iconGoogle
   }
-])
+]);
 
 // 2024.09.10[cgnoh]: 프로젝트 리스트
 const projectList = ref([
@@ -445,6 +427,21 @@ const projectList = ref([
     logo: projectAishop,
     index: 15
   },
+  {
+    name: 'AI 기반 스포츠 분석 시스템(관리자)',
+    logo: projectAishop,
+    index: 16
+  },
+  {
+    name: 'XGOLF 골프 앱(회원)',
+    logo: projectAishop,
+    index: 17
+  },
+  {
+    name: 'X-OPS(매장 관리 시스템)',
+    logo: projectAishop,
+    index: 18
+  }
 ]);
 
 // 2024.09.23[cgnoh]: 카드 플립 이벤트
