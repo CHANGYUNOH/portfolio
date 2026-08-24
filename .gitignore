@@ -1,3 +1,4 @@
 .idea
 .nuxt
 node_modules
+.output

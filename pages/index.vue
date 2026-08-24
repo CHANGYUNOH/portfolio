@@ -6,7 +6,7 @@
       <div class="banner-image" :class="{ 'is-active' : bannerImage }" @click="bannerImage = !bannerImage">
         <img src="/assets/images/default/profile.png" class="front" alt="프로필 이미지">
         <ul class="back">
-          <li class="back-list"><span class="tit">노찬규</span>｜남, 1994 (30세)</li>
+          <li class="back-list"><span class="tit">노찬규</span>｜남, 1994 (만 31세)</li>
           <li class="back-list"><span class="tit">경력</span>｜5년차</li>
           <li class="back-list"><span class="tit">Email</span>｜nohx051@naver.com</li>
           <li class="back-list"><span class="tit">Phone</span>｜010-6651-1375</li>
@@ -40,6 +40,8 @@
           <swiper :slidesPerView="1"
                   :spaceBetween="20"
                   :loop="true"
+                  :navigation="true"
+                  :modules="[Navigation]"
                   :breakpoints="{
                       '1200': { slidesPerView: 6 },
                       '1024': { slidesPerView: 4 },
@@ -63,6 +65,8 @@
           <swiper :slidesPerView="1"
                   :spaceBetween="20"
                   :loop="true"
+                  :navigation="true"
+                  :modules="[Navigation]"
                   :breakpoints="{
                       '1200': { slidesPerView: 6 },
                       '1024': { slidesPerView: 4 },
@@ -86,6 +90,8 @@
           <swiper :slidesPerView="1"
                   :spaceBetween="20"
                   :loop="true"
+                  :navigation="true"
+                  :modules="[Navigation]"
                   :breakpoints="{
                       '1200': { slidesPerView: 6 },
                       '1024': { slidesPerView: 4 },
@@ -115,7 +121,8 @@
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
                   }"
-                  :modules="[Autoplay]"
+                  :navigation="true"
+                  :modules="[Autoplay, Navigation]"
                   :breakpoints="{
                       '1200': { slidesPerView: 1.8 },
                       '1024': { slidesPerView: 1.6 },
@@ -186,8 +193,9 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 import iconHtml from '~/assets/images/icon/icon_html.png';
 import iconCss from '~/assets/images/icon/icon_css.png';

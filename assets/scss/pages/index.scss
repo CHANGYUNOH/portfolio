@@ -7,6 +7,29 @@
           color: var(--colorText1);
         }
 
+        // 2026.08.24[cgnoh]: 슬라이드 좌우 화살표 (라이트)
+        .slider {
+          :deep(.swiper-button-prev),
+          :deep(.swiper-button-next) {
+            background: #fff;
+            border-color: var(--colorBorder1);
+
+            &:after {
+              border-color: var(--colorText1);
+            }
+
+            &:hover {
+              background: var(--colorWheel8);
+              border-color: var(--colorWheel8);
+              box-shadow: 0 0 0 6px rgba(255, 168, 0, .15);
+
+              &:after {
+                border-color: #fff;
+              }
+            }
+          }
+        }
+
         .slider {
           &.project {
             .item {
@@ -56,7 +79,9 @@
 
     &-image {
       width: 460px;
-      height: 460px;
+      max-width: 100%;
+      aspect-ratio: 1 / 1;
+      flex-shrink: 0;
       position: relative;
       perspective: 1200px;
       cursor: pointer;
@@ -72,6 +97,8 @@
       }
 
       .front {
+        @include size(100%);
+        object-fit: cover;
         border-radius: 50px;
         position: absolute;
         left: 0;
@@ -154,9 +181,59 @@
 
     .cont {
       .slider {
+        // 2026.08.24[cgnoh]: 슬라이드 좌우 화살표 (swiper 가 JS 로 생성하므로 :deep 필요)
+        :deep(.swiper-button-prev),
+        :deep(.swiper-button-next) {
+          @include size(52px);
+          margin-top: -26px;
+          background: var(--colorText1);
+          border: 3px solid #555;
+          border-radius: 50%;
+          @include transition;
+
+          // 기본 swiper 폰트 아이콘 대신 CSS 로 그린 화살표
+          &:after {
+            content: '';
+            @include size(11px);
+            border: 3px solid #fff;
+            border-width: 3px 3px 0 0;
+            @include transition;
+          }
+
+          &:hover {
+            background: #ffff00;
+            border-color: #ffff00;
+            transform: scale(1.1);
+            box-shadow: 0 0 0 6px rgba(255, 255, 0, .15);
+
+            &:after {
+              border-color: var(--colorText1);
+            }
+          }
+        }
+
+        // 회전한 화살표의 잉크가 한쪽으로 치우치므로 translateX 로 광학 중앙 보정
+        :deep(.swiper-button-prev) {
+          &:after {
+            transform: translateX(3px) rotate(-135deg);
+          }
+        }
+
+        :deep(.swiper-button-next) {
+          &:after {
+            transform: translateX(-3px) rotate(45deg);
+          }
+        }
+
         &.project {
           .swiper {
             overflow: visible;
+          }
+
+          // 2026.08.21[cgnoh]: 좌우 화살표는 모바일에서만 노출
+          :deep(.swiper-button-prev),
+          :deep(.swiper-button-next) {
+            display: none;
           }
 
           .item {
@@ -347,9 +424,18 @@
 
       &-image {
         width: 100%;
+      }
+    }
 
-        img {
-          width: 100%;
+    .row {
+      .cont {
+        .slider {
+          &.project {
+            :deep(.swiper-button-prev),
+            :deep(.swiper-button-next) {
+              display: flex;
+            }
+          }
         }
       }
     }

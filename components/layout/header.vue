@@ -26,7 +26,7 @@
            <button type="button" class="mob-menu-link" @click="menuLink(item.name)">{{ item.name }}</button>
         </li>
       </ul>
-      <div class="footer">ⓒ 2024 CHANGYUNOH. All rights reserved.</div>
+      <div class="footer">ⓒ 2026 CHANGYUNOH. All rights reserved.</div>
     </nav>
   </header>
 </template>
